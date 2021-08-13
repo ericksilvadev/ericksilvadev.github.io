@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, About } from './pages';
+import { Home, About, Projects } from './pages';
 import './style/main.css';
 
 function App() {
@@ -7,6 +7,7 @@ function App() {
     <>
       <Home />
       <About />
+      <Projects />
     </>
   );
 }

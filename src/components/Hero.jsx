@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Parallax } from 'react-parallax';
 import { Button } from '@material-ui/core';
+import gsap from 'gsap';
 
 export default function Header() {
+  let title = useRef(null);
+  let profilePic = useRef(null);
+  useEffect(() => {
+    gsap.to(title, { duration: 1.2, opacity: 1, y: -20, ease: 'sine.inOut' })
+    gsap.to(profilePic, { duration: 2, opacity: 1, y: -20, ease: 'Power3.inOut' })
+  }, []);
+
   return (
     <main className="main-page">
       <Parallax
@@ -25,7 +33,7 @@ export default function Header() {
         }}
       />
       <div className="main-content">
-        <h1 className="title">Hello,<br /> I'm Erick<br /> Silva</h1>
+        <h1 className="title" ref={(el) => title = el}>Hello,<br /> I'm Erick<br /> Silva</h1>
         <Button variant="contained" color="primary">Download CV</Button>
       </div>
       <Parallax
@@ -37,7 +45,7 @@ export default function Header() {
           marginRight: '7vw',
         }}
       >
-        <div style={{ height: '85vh', width: '560px' }}></div>
+        <div ref={(el) => profilePic = el} className="profile-pic" style={{ height: '85vh', width: '560px' }}></div>
       </Parallax>
     </main>
   );

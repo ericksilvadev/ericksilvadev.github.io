@@ -12,6 +12,29 @@ $paragraph: #404949f3;
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: black;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #E5E5E5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $primary-dark;
+  // border-radius: 50px;
+
+  &:hover {
+    background-color: #041c1f;
+  }
+}
+
+
 body {
   font-family: 'Poppins', sans-serif;
   width: 100%;
@@ -19,4 +42,5 @@ body {
   // max-width: 1920px;
   background-color: #E5E5E5;
   font-size: 16px;
+  overflow-x: hidden;
 }

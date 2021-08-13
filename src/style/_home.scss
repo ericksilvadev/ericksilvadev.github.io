@@ -1,0 +1,98 @@
+// HEADER
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 40px 4vw;
+  color: $primary-dark;
+  position: absolute;
+  width: calc(100vw - 8vw);
+
+  .logo {
+    cursor: pointer;
+  }
+
+  .header-nav {
+    display: flex;
+    width: 53%;
+    
+    .nav-bar {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: 45%;
+
+        li {
+          text-transform: uppercase;
+          letter-spacing: .4em;
+          font-weight: 600;
+          cursor: pointer;
+
+          &::after{
+            content: '';
+            position: absolute;
+            width: 0px;
+            height: 3px;
+            background-color: $secondary;
+            transform: translateY(1.4em);
+            transition: all 0.2s;
+          }
+
+          &.about:hover::after {
+            width: 6em;
+            transform: translate(-5.9em, 1.4em);
+          }
+          &.projects:hover::after {
+            width: 9em;
+            transform: translate(-8.9em, 1.4em);
+          }
+          &.contact:hover::after {
+            width: 8em;
+            transform: translate(-8em, 1.4em);
+          }
+        }
+      }
+    }
+  }
+}
+
+// HERO
+
+.main-page {
+  display: flex;
+  color: $primary-dark;
+  justify-content: space-between;
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 60vw;
+
+    h1 {
+      font-size: 100px;
+    }
+
+    button {
+      margin: 6em 6em 0 0;
+      padding: 1.5em;
+      border-radius: 0;
+      color: rgba(0, 0, 0, 0.575);
+      font-weight: 600;
+      background-color: $secondary;
+      box-shadow: none;
+      letter-spacing: .4em;
+      font-size: 20px;
+
+      &:hover {
+        background-color: $secondary-dark;
+      }
+    }
+  }
+}

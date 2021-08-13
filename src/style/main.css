@@ -148,6 +148,7 @@ body {
 .main-page .main-content h1 {
   font-size: 100px;
   opacity: 0;
+  margin-top: 20px;
 }
 
 .main-page .main-content button {
@@ -183,14 +184,14 @@ body {
       -ms-flex-align: end;
           align-items: flex-end;
   color: #404949f3;
-  margin-right: 5vw;
+  margin-right: 4vw;
 }
 
 .about-page h1 {
   color: #042528;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  margin-left: 11vw;
+  margin-left: 10vw;
   font-size: 70px;
 }
 

@@ -58,7 +58,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="about-page">
+    <div className="about-page" id="about">
       <h1 className="about-title" ref={ (e) => title = e }>About me</h1>
       <h3 className="about-subtitle" ref={ (e) => subtitle = e }>
         I am a Frontend developer, currently specializing in ReactJS.

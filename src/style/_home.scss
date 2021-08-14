@@ -26,6 +26,10 @@
         justify-content: space-between;
         width: 45%;
 
+        a {
+          color: $primary-dark;
+        }
+
         li {
           text-transform: uppercase;
           letter-spacing: .4em;

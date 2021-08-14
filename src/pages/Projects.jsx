@@ -1,16 +1,13 @@
-import React, { useEffect, useRef } from 'react';
-import gsap from 'gsap/gsap-core';
+import React from 'react';
+// import gsap from 'gsap/gsap-core';
 import { Project } from '../components';
+import projects from '../data/projects';
 
 export default function Projects() {
-  let paragraph = useRef(null);
-  useEffect(() => {
-    gsap.to(paragraph, { duration: 2, opacity: 1, y: -20, ease: 'Power3.inOut' });
-  }, []);
-
   return (
-    <div className="projects-page" ref={ (e) => { paragraph = e; } }>
-      <Project />
+    <div className="projects-page" id="projects">
+      <h1>Projects</h1>
+      {projects.map((project, i) => <Project project={ project } key={ i } />)}
     </div>
   );
 }

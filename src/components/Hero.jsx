@@ -10,17 +10,17 @@ export default function Header() {
     gsap.fromTo(
       '.profile-pic',
       { width: 0, opacity: 0 },
-      { delay: 0.8, duration: 1, opacity: 1, width: 490, ease: 'sine' },
+      { delay: 0.5, duration: 1, opacity: 1, width: 490, ease: 'sine' },
     );
     gsap.fromTo(
       '.background',
       { opacity: 0 },
-      { delay: 1.6, duration: 0.5, opacity: 1, y: -20, ease: 'sine' },
+      { delay: 1.2, duration: 0.5, opacity: 1, y: -20, ease: 'sine' },
     );
     gsap.fromTo(
       '.cv-btn',
       { opacity: 0 },
-      { delay: 2, duration: 0.2, opacity: 1, y: -20, ease: 'sine' },
+      { delay: 1.5, duration: 0.2, opacity: 1, y: -20, ease: 'sine' },
     );
   }, []);
 

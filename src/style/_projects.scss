@@ -9,7 +9,7 @@
   }
 
   .project {
-    margin: 5vh 3vw;
+    margin: 5em 3vw;
     height: 70vh;
     display: flex;
     .img-container {
@@ -17,11 +17,12 @@
       display: flex;
       flex-direction: column;
       img {
+        transform: translateY(20px);
         height: 85%;
       }
 
       .under-bar {
-        height: 15%;
+        height: 100%;
         width: 60%;
         align-self: flex-end;
       }
@@ -36,6 +37,7 @@
 
       h2 {
         font-size: 50px;
+        margin-top: 2em;
       }
 
       p {
@@ -52,6 +54,9 @@
 
     .img-container {
       flex-direction: column-reverse;
+      img {
+        transform: translateY(-20px);
+      }
       .under-bar {
         height: 15%;
         width: 60%;
@@ -60,11 +65,11 @@
     }
 
     h2 {
-      margin-top: 3em;
+      margin-top: 4em;
     }
 
     p {
-      margin-bottom: 3em;
+      margin-bottom: 5em;
     }
   }
 }

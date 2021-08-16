@@ -9,7 +9,7 @@ export default function Home() {
   let title = useRef(null);
   let paragraph = useRef(null);
   useEffect(() => {
-    const toggleActions = 'play none none reverse';
+    const toggleActions = 'play none none';
     gsap.fromTo(title,
       { autoAlpha: 0 },
       {
@@ -57,6 +57,7 @@ export default function Home() {
       });
   }, []);
 
+  
   return (
     <div className="about-page" id="about">
       <h1 className="about-title" ref={ (e) => title = e }>About me</h1>

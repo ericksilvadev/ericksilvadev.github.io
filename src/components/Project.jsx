@@ -1,19 +1,112 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import { gsap } from 'gsap';
 
 export default function Project(
-  { project: { name, description, color, backgroundColor, img } },
-) {
+  { project: { name, description, color, backgroundColor, img }, id }
+  ) {
+  let projectInfos = useRef(null);
+    console.log(projectInfos);
+
+  useEffect(() => {
+    gsap.fromTo(`.project-img${id}`,
+      { opacity: 0 },
+      { 
+        duration: 0.3,
+        opacity: 1,
+        ease: 'none',
+        y: 0,
+        scrollTrigger: {
+          id: `.project-img${id}`,
+          trigger: `.project-img${id}`,
+          start: 'top center',
+          toggleActions: 'play none none',
+          // markers: true,
+        }
+      }
+    );
+    gsap.fromTo(projectInfos,
+      { opacity: 0 },
+      { 
+        duration: 0.6,
+        delay: .3,
+        opacity: 1,
+        ease: 'none',
+        scrollTrigger: {
+          id: `.project-info${id}`,
+          trigger: projectInfos,
+          start: 'top center',
+          toggleActions: 'play none none',
+          // markers: true,
+        }
+      }
+    );
+      gsap.fromTo(
+        `.under-bar${id}`,
+        { opacity: 0, width: 0 },
+        {
+        duration: 0.6,
+        delay: .3,
+        opacity: 1,
+        width: 500,
+        ease: 'none',
+        scrollTrigger: {
+          id: `.under-bar${id}`,
+          trigger: projectInfos,
+          start: 'top center',
+          toggleActions: 'play none none',
+          // markers: true,
+        }
+      }
+    );
+    gsap.fromTo(`.project-p${id}`,
+      { opacity: 0 },
+      { 
+        duration: 0.3,
+        opacity: 1,
+        delay: .7,
+        y: id % 2 ? -20 : 20,
+        ease: 'none',
+        scrollTrigger: {
+          id: `.project-p${id}`,
+          trigger: projectInfos,
+          start: 'top center',
+          toggleActions: 'play none none',
+          // markers: true,
+        }
+      }
+    );
+    gsap.fromTo(`.project-title${id}`,
+      { opacity: 0 },
+      { 
+        duration: 0.3,
+        opacity: 1,
+        delay: .4,
+        y: id % 2 ? -20 : 20,
+        ease: 'none',
+        scrollTrigger: {
+          id: `.project-title${id}`,
+          trigger: projectInfos,
+          start: 'top center',
+          toggleActions: 'play none none',
+          // markers: true,
+        }
+      }
+    );
+  })
+
+  if (!name) { return <div>LOADING...</div>; }
+
   return (
     <article className="project">
       <div className="img-container">
-        <img src={ img } alt={ `${name} thumbnail` } />
-        <div className="under-bar" style={ { backgroundColor } } />
+        <img src={ img } className={`project-img${id}`} alt={ `${name} thumbnail` } />
+        <div className={`under-bar under-bar${id}`} style={ { backgroundColor } } />
       </div>
-      <div style={ { color, backgroundColor } } className="project-info">
-        <h2>{name}</h2>
-        <p>{description}</p>
-      </div>
+      <section ref={ (el) => projectInfos = el } style={ { color, backgroundColor } } className={ `project-info project-info${id}` }>
+        <h2 className={`project-title${id}`}>{name}</h2>
+        <p className={`project-p${id}`}>{description}</p>
+      </section>
     </article>
   );
 }
@@ -27,4 +120,5 @@ Project.propTypes = {
     img: PropTypes.string,
     href: PropTypes.string,
   }).isRequired,
+  id: PropTypes.string.isRequired,
 };

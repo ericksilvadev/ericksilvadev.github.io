@@ -85,6 +85,7 @@ body {
 }
 
 .header .header-nav .nav-bar ul li {
+  margin-right: 2em;
   text-transform: uppercase;
   letter-spacing: .4em;
   font-weight: 600;
@@ -223,7 +224,7 @@ body {
 }
 
 .projects-page .project {
-  margin: 5vh 3vw;
+  margin: 5em 3vw;
   height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -242,11 +243,13 @@ body {
 }
 
 .projects-page .project .img-container img {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
   height: 85%;
 }
 
 .projects-page .project .img-container .under-bar {
-  height: 15%;
+  height: 100%;
   width: 60%;
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -268,6 +271,7 @@ body {
 
 .projects-page .project .project-info h2 {
   font-size: 50px;
+  margin-top: 2em;
 }
 
 .projects-page .project .project-info p {
@@ -290,6 +294,11 @@ body {
           flex-direction: column-reverse;
 }
 
+.projects-page .project:nth-of-type(even) .img-container img {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
 .projects-page .project:nth-of-type(even) .img-container .under-bar {
   height: 15%;
   width: 60%;
@@ -298,10 +307,10 @@ body {
 }
 
 .projects-page .project:nth-of-type(even) h2 {
-  margin-top: 3em;
+  margin-top: 4em;
 }
 
 .projects-page .project:nth-of-type(even) p {
-  margin-bottom: 3em;
+  margin-bottom: 5em;
 }
 /*# sourceMappingURL=main.css.map */

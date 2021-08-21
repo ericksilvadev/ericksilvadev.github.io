@@ -1,10 +1,13 @@
 .skillsets{
   display: flex;
   flex-direction: column;
+  width: 97vw;
+  margin: 0;
 
   h1 {
     @include pages-title;
-    margin: 15vh 10vw 7vh 10vw;
+    margin: 15vh 0vw 7vh 10vw;
+    width: 90%;
   }
 
   ul {

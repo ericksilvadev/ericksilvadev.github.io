@@ -67,3 +67,15 @@ body {
     font-size: 11px;
   }
 }
+
+@media screen and (width: 768px) and (height: 1024px) {
+  body {
+    font-size: 9px;
+  }
+}
+
+@media screen and (width: 1024px) and (height: 1366px) {
+  body {
+    font-size: 12px;
+  }
+}

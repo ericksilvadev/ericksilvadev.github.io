@@ -117,3 +117,19 @@
     font-size: 1.05em;
   }
 }
+
+@media screen and (max-width: 1024px) and (max-height: 1366px) {
+  .header {
+    .logo {
+      align-self: flex-start;
+    }
+
+    .header-nav .nav-bar ul {
+      display: block;
+      
+      li {
+        margin: 2em 0;
+      }
+    }
+  }
+}

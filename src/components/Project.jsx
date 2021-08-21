@@ -2,11 +2,12 @@ import React, { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { gsap } from 'gsap';
 
-export default function Project(
-  { project: { name, description, color, backgroundColor, img }, id }
-  ) {
+export default function Project({ project: { name, description, color, backgroundColor, img }, id }) {
   let projectInfos = useRef(null);
     console.log(projectInfos);
+
+  const underBar = window.matchMedia("(max-width: 1024px) and (max-height: 1366px)").matches ? 400 : 500;
+  
 
   useEffect(() => {
     gsap.fromTo(`.project-img${id}`,
@@ -48,7 +49,7 @@ export default function Project(
         duration: 0.6,
         delay: .3,
         opacity: 1,
-        width: 500,
+        width: underBar,
         ease: 'none',
         scrollTrigger: {
           id: `.under-bar${id}`,

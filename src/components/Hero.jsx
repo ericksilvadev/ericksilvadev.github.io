@@ -24,6 +24,10 @@ export default function Header() {
     );
   }, []);
 
+  let imgHeight = window.matchMedia("(max-width: 1024px) and (max-height: 1366px)").matches ? 60 : 85;
+
+  imgHeight = window.matchMedia("(max-width: 768px) and (max-height: 1024px)").matches ? 45 : imgHeight;
+
   return (
     <main className="main-page">
       <Parallax
@@ -65,14 +69,14 @@ export default function Header() {
       <Parallax
         strength={ 400 }
         bgImage="images/profile-picture.jpg"
-        bgImageStyle={ { height: '85vh' } }
+        bgImageStyle={ { height: `${imgHeight}vh` } }
         className="profile-pic"
         style={ {
           transform: 'scaleX(-1)',
           marginRight: '7vw',
         } }
       >
-        <div className="profile-pic" style={ { height: '85vh', width: '560px' } } />
+        <div className="profile-pic" style={ { height: `${imgHeight}vh` } } />
       </Parallax>
     </main>
   );

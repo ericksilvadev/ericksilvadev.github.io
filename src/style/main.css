@@ -51,6 +51,12 @@ body {
   }
 }
 
+@media screen and (max-width: 1280px) {
+  body {
+    font-size: 11px;
+  }
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -669,6 +675,23 @@ body {
   .contact-page .contact-container .contact-form form input,
   .contact-page .contact-container .contact-form form textarea {
     padding: 1em;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .contact-page .contact-container .contact-form form input,
+  .contact-page .contact-container .contact-form form textarea {
+    padding: 0.7em;
+    margin: 0.5em;
+  }
+  .contact-page .contact-container .contact-form form button {
+    padding: .6em;
+    font-size: 1em;
+    margin: 0.5em;
+  }
+  .contact-page .contact-container .contact-form form .textarea-container .message-counter {
+    -webkit-transform: translate(1.2em, -3em);
+            transform: translate(1.2em, -3em);
   }
 }
 

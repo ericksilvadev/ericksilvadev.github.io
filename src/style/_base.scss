@@ -53,5 +53,11 @@ body {
 @mixin pages-title {
   color: $primary-dark;
   margin: 15vh 10vw;
-  font-size: 70px;
+  font-size: 5.3em;
+}
+
+@media screen and (max-width: 1500px) {
+  body {
+    font-size: 13px;
+  }
 }

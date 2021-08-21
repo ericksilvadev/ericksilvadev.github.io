@@ -32,7 +32,7 @@ export default function Header() {
         renderLayer={ (percentage) => (
           <div
             style={ {
-              height: percentage * 860,
+              height: percentage * window.innerHeight - 5,
               backgroundColor: '#7CA9C1',
             } }
           />

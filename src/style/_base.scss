@@ -17,6 +17,11 @@ html {
   scrollbar-color: black;
 }
 
+::selection {
+  background: $primary;
+  color: white;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -43,4 +48,10 @@ body {
   background-color: #f3f3f3;
   font-size: 16px;
   overflow-x: hidden;
+}
+
+@mixin pages-title {
+  color: $primary-dark;
+  margin: 15vh 10vw;
+  font-size: 70px;
 }

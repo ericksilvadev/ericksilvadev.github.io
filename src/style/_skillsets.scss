@@ -1,0 +1,45 @@
+.skillsets{
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    @include pages-title;
+    margin: 15vh 10vw 7vh 10vw;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    
+    &.main-skills li {
+      padding: 6vh 7vw;
+      font-size: 15vh;
+      opacity: 1;
+      transform: translateY(-30px);
+    }
+
+    // &.secondary-skills li {
+    // }
+    
+    li {
+      transform: translateY(-20px);
+      font-size: 11vh;
+      list-style: none;
+      padding: 6vh 15vw;
+      color: $secondary;
+      opacity: 0.9;
+
+      &.fa-git-alt {
+        font-size: 13vh;
+      }
+
+      img {
+        width: 11vh;
+        transform: translateX(-1.1vw)
+      }
+    }
+  }
+}

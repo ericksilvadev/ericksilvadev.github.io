@@ -32,7 +32,7 @@ export default function Header() {
         renderLayer={ (percentage) => (
           <div
             style={ {
-              height: percentage * 940,
+              height: percentage * 860,
               backgroundColor: '#7CA9C1',
             } }
           />
@@ -56,7 +56,7 @@ export default function Header() {
           {' '}
           Silva
         </h1>
-        <Button className="cv-btn" variant="contained" color="primary">
+        <Button className="cv-btn" variant="contained">
           Download CV
         </Button>
       </div>

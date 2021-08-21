@@ -10,6 +10,16 @@ html {
   scrollbar-color: black;
 }
 
+::-moz-selection {
+  background: #7CA9C1;
+  color: white;
+}
+
+::selection {
+  background: #7CA9C1;
+  color: white;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -194,10 +204,11 @@ body {
 
 .about-page h1 {
   color: #042528;
+  margin: 15vh 10vw;
+  font-size: 70px;
+  margin-top: 5vh;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  margin-left: 10vw;
-  font-size: 70px;
 }
 
 .about-page h3 {
@@ -210,6 +221,14 @@ body {
   text-align: right;
   margin-bottom: 10vh;
   width: 80%;
+}
+
+.about-page p a {
+  color: #7CA9C1;
+}
+
+.about-page p a:hover {
+  color: #042528;
 }
 
 .projects-page {
@@ -312,5 +331,337 @@ body {
 
 .projects-page .project:nth-of-type(even) p {
   margin-bottom: 5em;
+}
+
+.skillsets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skillsets h1 {
+  color: #042528;
+  margin: 15vh 10vw;
+  font-size: 70px;
+  margin: 15vh 10vw 7vh 10vw;
+}
+
+.skillsets ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skillsets ul.main-skills li {
+  padding: 6vh 7vw;
+  font-size: 15vh;
+  opacity: 1;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+
+.skillsets ul li {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  font-size: 11vh;
+  list-style: none;
+  padding: 6vh 15vw;
+  color: #E9708E;
+  opacity: 0.9;
+}
+
+.skillsets ul li.fa-git-alt {
+  font-size: 13vh;
+}
+
+.skillsets ul li img {
+  width: 11vh;
+  -webkit-transform: translateX(-1.1vw);
+          transform: translateX(-1.1vw);
+}
+
+.contact-page {
+  min-height: 89vh;
+  width: 100vw;
+}
+
+.contact-page h1 {
+  color: #042528;
+  margin: 15vh 10vw;
+  font-size: 70px;
+  padding: 6vh 10vw;
+  margin: 0;
+}
+
+.contact-page .contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 65vh;
+}
+
+.contact-page .contact-container .contact-social {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #7CA9C1;
+}
+
+.contact-page .contact-container .contact-social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-page .contact-container .contact-social ul li {
+  list-style-type: none;
+}
+
+.contact-page .contact-container .contact-social ul li a {
+  font-size: 7vh;
+  margin: 2.3vw;
+  color: #042528;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.contact-page .contact-container .contact-social ul li a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.contact-page .contact-container .contact-social ul li a:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.contact-page .contact-container .contact-form {
+  width: 50%;
+  background-color: #ebebeb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-page .contact-container .contact-form h2 {
+  color: #042528;
+  font-size: 2.2em;
+  margin: 1em;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.contact-page .contact-container .contact-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+}
+
+.contact-page .contact-container .contact-form form .email-container, .contact-page .contact-container .contact-form form .textarea-container {
+  width: 100%;
+  margin-right: 3em;
+}
+
+.contact-page .contact-container .contact-form form .email-container .message-counter, .contact-page .contact-container .contact-form form .textarea-container .message-counter {
+  position: absolute;
+  -webkit-transform: translate(0.7em, -3.3em);
+          transform: translate(0.7em, -3.3em);
+  font-size: 13px;
+  color: #666666;
+}
+
+.contact-page .contact-container .contact-form form .email-container .message-counter::-moz-selection, .contact-page .contact-container .contact-form form .textarea-container .message-counter::-moz-selection {
+  background: transparent;
+  color: #666666;
+}
+
+.contact-page .contact-container .contact-form form .email-container .message-counter::selection, .contact-page .contact-container .contact-form form .textarea-container .message-counter::selection {
+  background: transparent;
+  color: #666666;
+}
+
+.contact-page .contact-container .contact-form form input, .contact-page .contact-container .contact-form form textarea, .contact-page .contact-container .contact-form form button {
+  color: #042528;
+  border: none;
+  border: 1px solid transparent;
+  background-color: #fcfcfc;
+  padding: 1.5em;
+  width: 100%;
+  margin: 1em 0;
+  font-family: 'Poppins', sans-serif;
+  resize: none;
+  outline: none;
+}
+
+.contact-page .contact-container .contact-form form textarea {
+  height: 20vh;
+}
+
+.contact-page .contact-container .contact-form form input.invalid, .contact-page .contact-container .contact-form form textarea.invalid {
+  border: 1px solid #fd2727;
+  -webkit-animation: error .3s linear;
+          animation: error .3s linear;
+}
+
+.contact-page .contact-container .contact-form form button {
+  padding: .8em;
+  background-color: #E9708E;
+  color: rgba(0, 0, 0, 0.575);
+  border-radius: 0;
+  font-weight: 600;
+  letter-spacing: .3em;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 1em 0;
+  width: 40%;
+  -webkit-transform: translateX(1.5em);
+          transform: translateX(1.5em);
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.contact-page .contact-container .contact-form form button:hover {
+  background-color: #da6b86;
+}
+
+.contact-page .contact-container .success-message {
+  width: 50%;
+  color: #042528;
+  font-size: 1.4em;
+  background-color: #ebebeb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-page .contact-container .success-message button {
+  background-color: #E9708E;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.575);
+  border-radius: 0;
+  padding: .8em;
+  margin-top: 1em;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.contact-page .contact-container .success-message button:hover {
+  background-color: #da6b86;
+}
+
+.error-message {
+  position: absolute;
+  font-size: 13px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-transform: translateY(-1.2em);
+          transform: translateY(-1.2em);
+  color: #fd2727;
+}
+
+@-webkit-keyframes error {
+  25% {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px);
+  }
+  50% {
+    -webkit-transform: translateX(2px);
+            transform: translateX(2px);
+  }
+  75% {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes error {
+  25% {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px);
+  }
+  50% {
+    -webkit-transform: translateX(2px);
+            transform: translateX(2px);
+  }
+  75% {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 15vh;
 }
 /*# sourceMappingURL=main.css.map */

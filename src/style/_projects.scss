@@ -3,9 +3,7 @@
   padding-top: 1px;
 
   h1 {
-    color: $primary-dark;
-    margin: 15vh 10vw;
-    font-size: 70px;
+    @include pages-title;
   }
 
   .project {

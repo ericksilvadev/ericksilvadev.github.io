@@ -9,10 +9,9 @@
   margin-right: 4vw;
   
   h1 {
-    color: $primary-dark;
+    @include pages-title;
+    margin-top: 5vh;
     align-self: flex-start;
-    margin-left: 10vw;
-    font-size: 70px;
   }
 
   h3 {
@@ -25,5 +24,13 @@
     text-align: right;
     margin-bottom: 10vh;
     width: 80%;
+
+    a {
+      color: $primary;
+
+      &:hover {
+        color: $primary-dark;
+      }
+    }
   }
 }

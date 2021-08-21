@@ -1,5 +1,6 @@
 import React from 'react';
-import { Home, About, Projects } from './pages';
+import { Home, About, Projects, Skillsets, Contact } from './pages';
+import Footer from './components/Footer';
 import './style/main.css';
 
 function App() {
@@ -7,7 +8,10 @@ function App() {
     <>
       <Home />
       <About />
+      <Skillsets />
       <Projects />
+      <Contact />
+      <Footer />
     </>
   );
 }

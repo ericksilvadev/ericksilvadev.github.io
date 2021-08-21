@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import { Project } from '../components';
 import { gsap } from 'gsap';
+import { Project } from '../components';
 import projects from '../data/projects';
 
 export default function Projects() {
@@ -19,8 +19,8 @@ export default function Projects() {
           toggleActions: 'play none none',
           // markers: true,
         },
-    });
-  })
+      });
+  });
   return (
     <div className="projects-page" id="projects">
       <h1>Projects</h1>

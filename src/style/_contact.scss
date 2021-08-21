@@ -1,0 +1,171 @@
+.contact-page {
+  min-height: 89vh;
+  width: 100vw;
+
+  h1 {
+    @include pages-title;
+    padding: 6vh 10vw;
+    margin: 0;
+  }
+
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 65vh;
+    
+    .contact-social {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $primary;
+
+      ul {
+        display: flex;
+        li {
+          list-style-type: none;
+          a {
+            font-size: 7vh;
+            margin: 2.3vw;
+            color: $primary-dark;
+            cursor: pointer;
+            transition: .2s;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+            &:active {
+              transform: scale(0.9);
+            }
+          }
+        }
+      }
+    }
+
+    .contact-form {
+      width: 50%;
+      background-color: rgb(235, 235, 235);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      h2 {
+        color: $primary-dark;
+        font-size: 2.2em;
+        margin: 1em;
+        align-self: flex-start;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+
+        .email-container, .textarea-container {
+          width: 100%;
+          margin-right: 3em;
+
+          .message-counter {
+            position: absolute;
+            transform: translate(0.7em, -3.3em);
+            font-size: 13px;
+            color: rgb(102, 102, 102);
+
+            &::selection {
+              background: transparent;
+              color: rgb(102, 102, 102);
+            }
+          }
+        }
+        
+        input, textarea, button {
+          color: $primary-dark;
+          border: none;
+          border: 1px solid transparent;
+          background-color: rgb(252, 252, 252);
+          padding: 1.5em;
+          width: 100%;
+          margin: 1em 0;
+          font-family: 'Poppins', sans-serif;
+          resize: none;
+          outline: none;
+        }
+        
+        textarea {
+          height: 20vh;
+        }
+      
+        input.invalid, textarea.invalid {
+          border: 1px solid rgb(253, 39, 39);
+          animation: error .3s linear;
+        }
+        button {
+          padding: .8em;
+          background-color: $secondary;
+          color: rgba(0, 0, 0, 0.575);
+          border-radius: 0;
+          font-weight: 600;
+          letter-spacing: .3em;
+          align-self: flex-end;
+          margin: 1em 0;
+          width: 40%;
+          transform: translateX(1.5em);
+          transition: .2s;
+          &:hover {
+            background-color: $secondary-dark;
+          }
+        }
+      }
+    }
+
+    .success-message {
+      width: 50%;
+      color: $primary-dark;
+      font-size: 1.4em;
+      background-color: rgb(235, 235, 235);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      button {
+        background-color: $secondary;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.575);
+        border-radius: 0;
+        padding: .8em;
+        margin-top: 1em;
+        transition: .2s;
+        &:hover {
+          background-color: $secondary-dark;
+        }
+      }
+    }
+  }
+}
+
+.error-message {
+  position: absolute;
+  font-size: 13px;
+  align-self: flex-start;
+  transform: translateY(-1.2em);
+  color: rgb(253, 39, 39);
+}
+
+@keyframes error {
+  25%{
+    transform: translateX(-2px)
+  }
+  50%{
+    transform: translateX(2px)
+  }
+  75%{
+    transform: translateX(-2px)
+  }
+  100%{
+    transform: translateX(0px)
+  }
+}

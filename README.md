@@ -4,8 +4,8 @@ This is the second version of my portfolio that I created using [ReactJS](https:
 
 # Erick Silva's Portfolio
 
-This is my portfolio, where you can find more about me and my path as a Frontend developer. In it, I show all the projects that I'm most proud of. You can directly access it by clicking here.
-## What technologies I used to develop this portfolio
+This is my portfolio, where you can find more about me and my path as a Frontend developer. Here, I show all the projects that I'm most proud of. You can directly access it by clicking here.
+## Which technologies I used to develop this portfolio
 
  * [ReactJS](https://reactjs.org/)
 

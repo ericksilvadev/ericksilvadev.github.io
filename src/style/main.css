@@ -197,7 +197,14 @@ body {
 
 @media screen and (max-width: 1500px) {
   .header .header-nav {
-    width: 40%;
+    width: 45%;
+    font-size: 1.05em;
+  }
+}
+
+@media screen and (min-width: 2200px) {
+  .header .header-nav {
+    width: 58%;
     font-size: 1.05em;
   }
 }
@@ -264,6 +271,7 @@ body {
 .projects-page .project {
   margin: 5em 3vw;
   height: 70vh;
+  min-height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -338,7 +346,7 @@ body {
 }
 
 .projects-page .project:nth-of-type(even) .img-container .under-bar {
-  height: 15%;
+  height: 100%;
   width: 60%;
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -350,6 +358,15 @@ body {
 
 .projects-page .project:nth-of-type(even) p {
   margin-bottom: 5em;
+}
+
+@media screen and (width: 1366px) and (height: 1024px) {
+  .projects-page .project .img-container img {
+    max-width: 60vw;
+  }
+  .projects-page .project {
+    height: 60vh;
+  }
 }
 
 .skillsets {

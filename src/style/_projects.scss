@@ -9,6 +9,7 @@
   .project {
     margin: 5em 3vw;
     height: 70vh;
+    min-height: 60vh;
     display: flex;
     .img-container {
       height: 100%;
@@ -17,6 +18,7 @@
       img {
         transform: translateY(20px);
         height: 85%;
+        // max-width: 60vw;
       }
 
       .under-bar {
@@ -56,7 +58,7 @@
         transform: translateY(-20px);
       }
       .under-bar {
-        height: 15%;
+        height: 100%;
         width: 60%;
         align-self: flex-start;
       }
@@ -71,3 +73,13 @@
     }
   }
 }
+
+@media screen and (width: 1366px) and (height: 1024px) {
+  .projects-page .project .img-container img {
+    max-width: 60vw;
+  }
+  .projects-page .project {
+    height: 60vh;
+  }
+}
+

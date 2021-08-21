@@ -32,7 +32,7 @@ export default function Header() {
         renderLayer={ (percentage) => (
           <div
             style={ {
-              height: percentage * window.innerHeight - 5,
+              height: percentage * window.innerHeight - 10,
               backgroundColor: '#7CA9C1',
             } }
           />
@@ -56,9 +56,11 @@ export default function Header() {
           {' '}
           Silva
         </h1>
-        <Button className="cv-btn" variant="contained">
-          Download CV
-        </Button>
+        <a href="/erick-silva-cv.pdf" download>
+          <Button className="cv-btn" variant="contained">
+            Download CV
+          </Button>
+        </a>
       </div>
       <Parallax
         strength={ 400 }

@@ -1,8 +1,7 @@
 .skillsets{
   display: flex;
   flex-direction: column;
-  width: 97vw;
-  margin: 0;
+  width: 100vw;
 
   h1 {
     @include pages-title;
@@ -40,9 +39,83 @@
       }
 
       img {
-        width: 11vh;
+        width: 11vw;
         transform: translateX(-1.1vw)
       }
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skillsets {
+    width: 89vw;
+    h1 {
+      margin: 2.5em auto 1em auto;
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      align-self: center;
+      align-items: center;
+      justify-content: center;
+      
+      &.main-skills li {
+        padding: .3em 0;
+        font-size: 23vw;
+        opacity: 1;
+        transform: translateY(-30px);
+      }
+  
+      // &.secondary-skills li {
+      // }
+      
+      li {
+        text-align: center;
+        transform: translateY(-20px);
+        font-size: 15vw;
+        width: 48%;
+        list-style: none;
+        padding: .5em 0;
+        color: $secondary;
+        opacity: 0.9;
+  
+        &.fa-git-alt {
+          font-size: 17vw;
+        }
+  
+        img {
+          transform: translateX(-1.1vw);
+          width: 15vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (width: 768px) {
+  body {
+    font-size: 12px;
+  }
+  .skillsets {
+    width: 95vw;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .skillsets {
+    width: 90.5vw;
+  }
+}
+
+@media screen and (width: 375px) {
+  .skillsets {
+    width: 89vw;
+  }
+}
+
+@media screen and (width: 360px) {
+  .skillsets {
+    width: 86vw;
   }
 }

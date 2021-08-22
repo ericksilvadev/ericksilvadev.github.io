@@ -65,7 +65,7 @@ body {
 
 @media screen and (width: 1024px) and (height: 1366px) {
   body {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
@@ -292,10 +292,13 @@ body {
 
 @media screen and (max-width: 768px) {
   .about-page {
-    width: 100vw;
+    width: 100%;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    height: 110vh;
+    margin: 0;
+    margin-top: 50vh;
   }
   .about-page h1 {
     -ms-flex-item-align: end;
@@ -447,7 +450,8 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 92.5vw;
+    width: 90.5vw;
+    padding: 0;
   }
   .projects-page h1 {
     margin-bottom: 1em;
@@ -485,6 +489,30 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .projects-page {
+    width: 95vw;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .projects-page {
+    width: 90.5vw;
+  }
+}
+
+@media screen and (width: 375px) {
+  .projects-page {
+    width: 89vw;
+  }
+}
+
+@media screen and (width: 360px) {
+  .projects-page {
+    width: 86vw;
+  }
+}
+
 .skillsets {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -493,8 +521,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 97vw;
-  margin: 0;
+  width: 100vw;
 }
 
 .skillsets h1 {
@@ -544,9 +571,87 @@ body {
 }
 
 .skillsets ul li img {
-  width: 11vh;
+  width: 11vw;
   -webkit-transform: translateX(-1.1vw);
           transform: translateX(-1.1vw);
+}
+
+@media screen and (max-width: 768px) {
+  .skillsets {
+    width: 89vw;
+  }
+  .skillsets h1 {
+    margin: 2.5em auto 1em auto;
+  }
+  .skillsets ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .skillsets ul.main-skills li {
+    padding: .3em 0;
+    font-size: 23vw;
+    opacity: 1;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  .skillsets ul li {
+    text-align: center;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+    font-size: 15vw;
+    width: 48%;
+    list-style: none;
+    padding: .5em 0;
+    color: #E9708E;
+    opacity: 0.9;
+  }
+  .skillsets ul li.fa-git-alt {
+    font-size: 17vw;
+  }
+  .skillsets ul li img {
+    -webkit-transform: translateX(-1.1vw);
+            transform: translateX(-1.1vw);
+    width: 15vw;
+  }
+}
+
+@media screen and (width: 768px) {
+  body {
+    font-size: 12px;
+  }
+  .skillsets {
+    width: 95vw;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .skillsets {
+    width: 90.5vw;
+  }
+}
+
+@media screen and (width: 375px) {
+  .skillsets {
+    width: 89vw;
+  }
+}
+
+@media screen and (width: 360px) {
+  .skillsets {
+    width: 86vw;
+  }
 }
 
 .contact-page {

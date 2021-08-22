@@ -37,8 +37,12 @@
 
 @media screen and (max-width: 768px) {
   .about-page {
-    width: 100vw;
+    width: 100%;
     align-items: flex-start;
+    height: 110vh;
+    margin: 0;
+    margin-top: 50vh;
+
     
     h1 {
       align-self: flex-end;

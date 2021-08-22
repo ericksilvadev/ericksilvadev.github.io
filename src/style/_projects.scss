@@ -100,7 +100,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 92.5vw;
+    width: 90.5vw;
+    padding: 0;
 
     h1 {
       margin-bottom: 1em;
@@ -139,5 +140,29 @@
         margin-bottom: 3em;
       }
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects-page {
+    width: 95vw;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .projects-page {
+    width: 90.5vw;
+  }
+}
+
+@media screen and (width: 375px) {
+  .projects-page {
+    width: 89vw;
+  }
+}
+
+@media screen and (width: 360px) {
+  .projects-page {
+    width: 86vw;
   }
 }

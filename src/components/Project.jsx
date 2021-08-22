@@ -31,12 +31,12 @@ export default function Project({ project: { name, description, color, backgroun
       { opacity: 0 },
       { 
         duration: 0.6,
-        delay: .3,
+        delay: .5,
         opacity: 1,
         ease: 'none',
         scrollTrigger: {
           id: `.project-info${id}`,
-          trigger: projectInfos,
+          trigger: `.project-img${id}`,
           start: 'top center',
           toggleActions: 'play none none',
           // markers: true,
@@ -48,13 +48,13 @@ export default function Project({ project: { name, description, color, backgroun
         { opacity: 0, width: 0 },
         {
         duration: 0.6,
-        delay: .3,
+        delay: .5,
         opacity: 1,
         width: underBar,
         ease: 'none',
         scrollTrigger: {
           id: `.under-bar${id}`,
-          trigger: projectInfos,
+          trigger: `.project-img${id}`,
           start: 'top center',
           toggleActions: 'play none none',
           // markers: true,
@@ -71,7 +71,7 @@ export default function Project({ project: { name, description, color, backgroun
         ease: 'none',
         scrollTrigger: {
           id: `.project-p${id}`,
-          trigger: projectInfos,
+          trigger: `.project-img${id}`,
           start: 'top center',
           toggleActions: 'play none none',
           // markers: true,
@@ -88,8 +88,8 @@ export default function Project({ project: { name, description, color, backgroun
         ease: 'none',
         scrollTrigger: {
           id: `.project-title${id}`,
-          trigger: projectInfos,
-          start: 'top center',
+          trigger: `.project-img${id}`,
+          start: 'top center - 100px',
           toggleActions: 'play none none',
           // markers: true,
         }

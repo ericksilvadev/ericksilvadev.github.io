@@ -39,14 +39,14 @@
       }
 
       img {
-        width: 11vw;
+        width: 11vh;
         transform: translateX(-1.1vw)
       }
     }
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .skillsets {
     width: 89vw;
     h1 {
@@ -93,6 +93,12 @@
   }
 }
 
+@media screen and (width: 1024px) {
+  .skillsets {
+    width: 94vw;
+  }
+}
+
 @media screen and (width: 768px) {
   body {
     font-size: 12px;
@@ -117,5 +123,11 @@
 @media screen and (width: 360px) {
   .skillsets {
     width: 86vw;
+  }
+}
+
+@media screen and (width: 320px) {
+  .skillsets {
+    width: 88vw;
   }
 }

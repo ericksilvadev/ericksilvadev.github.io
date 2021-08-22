@@ -215,3 +215,9 @@
     }
   }
 }
+
+@media screen and (min-height: 568px) and (max-height: 750px){
+  .contact-page .contact-container {
+    height: 80vh;
+  }
+}

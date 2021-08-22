@@ -1,6 +1,7 @@
 .projects-page {
   color: $primary-dark;
   padding-top: 1px;
+  margin: auto;
   width: 100vw;
 
   h1 {
@@ -8,7 +9,7 @@
   }
 
   .project {
-    margin: 5em 3vw;
+    margin: 5em auto;
     height: 70vh;
     min-height: 60vh;
     display: flex;
@@ -95,12 +96,12 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .projects-page {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90.5vw;
+    width: 100vw;
     padding: 0;
 
     h1 {
@@ -143,6 +144,12 @@
   }
 }
 
+@media screen and (width: 1024px) {
+  div.projects-page {
+    width: 94vw;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .projects-page {
     width: 95vw;
@@ -164,5 +171,11 @@
 @media screen and (width: 360px) {
   .projects-page {
     width: 86vw;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .projects-page {
+    width: 88vw;
   }
 }

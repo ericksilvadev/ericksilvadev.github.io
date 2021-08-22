@@ -31,10 +31,10 @@
             margin: 2.3vw;
             color: $primary-dark;
             cursor: pointer;
-            transition: .2s;
+            transition: .1s;
 
             &:hover {
-              transform: scale(1.1);
+              transform: scale(1.2);
             }
             &:active {
               transform: scale(0.9);

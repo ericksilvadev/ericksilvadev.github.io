@@ -530,7 +530,6 @@ body {
     margin-bottom: 1em;
   }
   .projects-page .project, .projects-page .project:nth-of-type(even) {
-    margin: 5em 3vw;
     height: auto;
     max-height: 65vh;
     -webkit-box-orient: vertical;
@@ -809,13 +808,13 @@ body {
   margin: 2.3vw;
   color: #042528;
   cursor: pointer;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: .1s;
+  transition: .1s;
 }
 
 .contact-page .contact-container .contact-social ul li a:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .contact-page .contact-container .contact-social ul li a:active {

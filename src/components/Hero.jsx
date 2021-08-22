@@ -2,6 +2,9 @@ import React, { useEffect, useRef } from 'react';
 import { Parallax } from 'react-parallax';
 import { Button } from '@material-ui/core';
 import gsap from 'gsap';
+// import { ErickSilvaCV, getProps } from '../data/erick-silva-cv.pdf';
+// import { saveAs } from 'file-saver';
+// import { pdf } from '@react-pdf/renderer';
 
 export default function Header() {
   let title = useRef(null);
@@ -27,6 +30,15 @@ export default function Header() {
   let imgHeight = window.matchMedia("(max-width: 1024px) and (max-height: 1366px)").matches ? 60 : 85;
 
   imgHeight = window.matchMedia("(max-width: 768px) and (max-height: 1024px)").matches ? 45 : imgHeight;
+
+  // const getCV = async () => {
+  //   const props = await getProps();
+  //   const doc = <ErickSilvaCV {...props} />;
+  //   const asPdf = pdf({});
+  //   asPdf.updateContainer(doc);
+  //   const blob = await asPdf.toBlob();
+  //   saveAs(blob, 'erick-da-silva-pereira-cv.pdf');
+  // }
 
   return (
     <main className="main-page">
@@ -60,11 +72,13 @@ export default function Header() {
           {' '}
           Silva
         </h1>
-        <a href="/erick-silva-cv.pdf" download>
-          <Button className="cv-btn" variant="contained">
-            Download CV
-          </Button>
-        </a>
+        <Button
+        className="cv-btn"
+        variant="contained"
+        // onClick={getCV}
+        >
+          Download CV
+        </Button>
       </div>
       <Parallax
         strength={ 400 }

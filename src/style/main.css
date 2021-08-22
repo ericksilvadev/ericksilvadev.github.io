@@ -69,6 +69,14 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 9px;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -377,11 +385,11 @@ body {
       align-self: flex-start;
 }
 
-.projects-page .project:nth-of-type(even) h2 {
+.projects-page .project:nth-of-type(even) .project-info h2 {
   margin-top: 4em;
 }
 
-.projects-page .project:nth-of-type(even) p {
+.projects-page .project:nth-of-type(even) .project-info p {
   margin-bottom: 5em;
 }
 
@@ -401,6 +409,54 @@ body {
   .projects-page .project {
     height: 35vh;
     min-height: 35vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects-page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .projects-page h1 {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .projects-page .project, .projects-page .project:nth-of-type(even) {
+    height: auto;
+    min-height: 30vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: left;
+    width: 95vw;
+  }
+  .projects-page .project .img-container img, .projects-page .project:nth-of-type(even) .img-container img {
+    max-width: 100vw;
+    height: 100%;
+  }
+  .projects-page .project .project-info h2, .projects-page .project:nth-of-type(even) .project-info h2 {
+    margin-top: 0;
+  }
+  .projects-page .project .project-info p, .projects-page .project:nth-of-type(even) .project-info p {
+    margin: 2em 0 5em 0;
+  }
+  .projects-page .project:nth-of-type(even) .project-info h2 {
+    margin-top: 1.5em;
+  }
+  .projects-page .project:nth-of-type(even) .project-info p {
+    margin-bottom: 3em;
   }
 }
 

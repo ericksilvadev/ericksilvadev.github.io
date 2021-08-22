@@ -6,7 +6,8 @@ export default function Project({ project: { name, description, color, backgroun
   let projectInfos = useRef(null);
     console.log(projectInfos);
 
-  const underBar = window.matchMedia("(max-width: 1024px) and (max-height: 1366px)").matches ? 400 : 500;
+  let underBar = window.matchMedia("(max-width: 1024px) and (max-height: 1366px)").matches ? 400 : 500;
+  underBar = window.matchMedia("(max-width: 768px)").matches ? 0 : 500;
   
 
   useEffect(() => {

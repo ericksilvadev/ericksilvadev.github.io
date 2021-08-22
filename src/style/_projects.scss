@@ -112,13 +112,13 @@
 
     .project, .project:nth-of-type(even) {
       height: auto;
+      margin: 70px 0;
       max-height: 65vh;
-      margin: 0;
       flex-direction: column;
       justify-content: center;
       text-align: left;
       width: 100%;
-      
+
       .img-container {
         img {
           max-width: 100vw;
@@ -126,13 +126,12 @@
           transform: translateY(20px);
         }
       }
-      
+
       .under-bar {
         display: none;
       }
-      
+
       .project-info {
-        margin: 0 0 70px 0;
         h2 {
           margin-top: 0;
         }

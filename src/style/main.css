@@ -532,8 +532,8 @@ body {
   }
   .projects-page .project, .projects-page .project:nth-of-type(even) {
     height: auto;
+    margin: 70px 0;
     max-height: 65vh;
-    margin: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -552,9 +552,6 @@ body {
   }
   .projects-page .project .under-bar, .projects-page .project:nth-of-type(even) .under-bar {
     display: none;
-  }
-  .projects-page .project .project-info, .projects-page .project:nth-of-type(even) .project-info {
-    margin: 0 0 70px 0;
   }
   .projects-page .project .project-info h2, .projects-page .project:nth-of-type(even) .project-info h2 {
     margin-top: 0;

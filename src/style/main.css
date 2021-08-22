@@ -242,6 +242,39 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 2em;
+  }
+  .header .logo {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .header .header-nav {
+    width: 28%;
+  }
+  .header .header-nav .nav-bar ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header .header-nav .nav-bar ul li {
+    margin: 0 .5em;
+  }
+  .main-page {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-page .main-content {
+    width: 100vw;
+  }
+  .profile-pic {
+    display: none;
+  }
+}
+
 .about-page {
   height: 100vh;
   margin-top: 50vh;

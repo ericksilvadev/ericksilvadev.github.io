@@ -133,3 +133,36 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  // HEADER
+  .header {
+    padding: 2em;
+    .logo {
+      align-self: flex-start;
+    }
+
+    .header-nav {
+      width: 28%;
+      .nav-bar ul {
+        display: flex;
+        
+        li {
+          margin: 0 .5em;
+        }
+      }
+    }
+  }
+
+  // HERO
+  .main-page {
+    flex-direction: column;
+    .main-content {
+      width: 100vw;
+    }
+  }
+
+  .profile-pic {
+    display: none;
+  }
+}

@@ -133,3 +133,75 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  // HEADER
+  .header {
+    padding: 2em;
+    width: calc(100vw - 4em);
+    .logo {
+      align-self: flex-start;
+    }
+
+    .header-nav {
+      width: 32%;
+      .nav-bar ul {
+        display: flex;
+        
+        li {
+          margin: 0 .5em;
+        }
+      }
+    }
+  }
+
+  // HERO
+  .main-page {
+    flex-direction: column;
+    .main-content {
+      width: 100vw;
+    }
+  }
+
+  .profile-pic {
+    display: none;
+  }
+}
+
+@media screen and (width: 768px) {
+  .header .header-nav {
+    width: 63%;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .header .header-nav {
+    width: 35%;
+  }
+}
+
+@media screen and (width: 375px) {
+  .header .header-nav {
+    width: 28%;
+  }
+}
+
+@media screen and (width: 360px) {
+  .header .header-nav {
+    width: 25%;
+  }
+}
+
+@media screen and (width: 320px) {
+  body {
+    font-size: 8px;
+  }
+  .header {
+    padding: 2em 1em;
+    width: calc(100vw - 2em);
+    .header-nav {
+      width: 22%;
+    }
+
+  }
+}

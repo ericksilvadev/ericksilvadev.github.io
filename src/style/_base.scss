@@ -76,6 +76,14 @@ body {
 
 @media screen and (width: 1024px) and (height: 1366px) {
   body {
-    font-size: 12px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 9px;
+    width: 100vw;
+    overflow-x: hidden;
   }
 }

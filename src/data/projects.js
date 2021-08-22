@@ -46,7 +46,7 @@ const projects = [
   },
   {
     name: 'Trybewallet',
-    description: 'bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ',
+    description: 'An expense manager and currency converter app, where you can add and track your expenses.',
     color: '#F6F6F6',
     backgroundColor: '#494C7A',
     img: '/images/trybewallet.png',
@@ -55,7 +55,7 @@ const projects = [
   },
   {
     name: 'Trivia Game',
-    description: 'bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ',
+    description: 'This one was a group project. I worked together with Davig Gonzaga, Thales Daniel, Raphael Soares and Tharcio Sampaio to develop this quiz game. We where also able to use the Scrum and Kanban methods',
     color: '#F6F6F6',
     backgroundColor: '#003652',
     img: '/images/trivia-game.png',

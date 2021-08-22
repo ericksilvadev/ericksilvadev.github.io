@@ -524,11 +524,13 @@ body {
             align-items: center;
     width: 100vw;
     padding: 0;
+    margin: 0;
   }
   .projects-page h1 {
     margin-bottom: 1em;
   }
   .projects-page .project, .projects-page .project:nth-of-type(even) {
+    margin: 5em 3vw;
     height: auto;
     min-height: 30vh;
     -webkit-box-orient: vertical;
@@ -567,13 +569,13 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (width: 768px) {
   .projects-page {
     width: 95vw;
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (width: 414px) {
   .projects-page {
     width: 90.5vw;
   }

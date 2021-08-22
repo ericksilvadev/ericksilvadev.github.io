@@ -531,7 +531,6 @@ body {
     margin-bottom: 1em;
   }
   .projects-page .project, .projects-page .project:nth-of-type(even) {
-    margin: 35px 0;
     height: auto;
     max-height: 65vh;
     -webkit-box-orient: vertical;
@@ -552,6 +551,9 @@ body {
   }
   .projects-page .project .under-bar, .projects-page .project:nth-of-type(even) .under-bar {
     display: none;
+  }
+  .projects-page .project .project-info, .projects-page .project:nth-of-type(even) .project-info {
+    margin: 35px 0;
   }
   .projects-page .project .project-info h2, .projects-page .project:nth-of-type(even) .project-info h2 {
     margin-top: 0;

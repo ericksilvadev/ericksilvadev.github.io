@@ -523,6 +523,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     width: 100vw;
+    height: auto;
     padding: 0;
     margin: 0;
   }

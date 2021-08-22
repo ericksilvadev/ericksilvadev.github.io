@@ -217,7 +217,7 @@ body {
 
 @media screen and (max-width: 1500px) {
   .header .header-nav {
-    width: 45%;
+    width: 45% !important;
     font-size: 1.05em;
   }
 }
@@ -276,21 +276,21 @@ body {
   }
 }
 
-@media screen and (width: 768px) {
+@media screen and (max-width: 768px) {
   .header .header-nav {
-    width: 63%;
+    width: 63% !important;
   }
 }
 
-@media screen and (min-width: 414px) {
+@media screen and (max-width: 414px) {
   .header .header-nav {
-    width: 35%;
+    width: 35% !important;
   }
 }
 
-@media screen and (width: 375px) {
+@media screen and (max-width: 375px) {
   .header .header-nav {
-    width: 28%;
+    width: 28% !important;
   }
 }
 
@@ -889,6 +889,7 @@ body {
 .contact-page .contact-container .contact-form form input, .contact-page .contact-container .contact-form form textarea, .contact-page .contact-container .contact-form form button {
   color: #042528;
   border: none;
+  border-radius: 0;
   border: 1px solid transparent;
   background-color: #fcfcfc;
   padding: 1.5em;

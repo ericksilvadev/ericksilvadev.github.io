@@ -84,6 +84,7 @@
         input, textarea, button {
           color: $primary-dark;
           border: none;
+          border-radius: 0;
           border: 1px solid transparent;
           background-color: rgb(252, 252, 252);
           padding: 1.5em;

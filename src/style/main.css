@@ -531,8 +531,8 @@ body {
   }
   .projects-page .project, .projects-page .project:nth-of-type(even) {
     margin: 5em 3vw;
-    height: 70vh;
-    min-height: 30vh;
+    height: auto;
+    max-height: 65vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

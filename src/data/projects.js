@@ -55,7 +55,7 @@ const projects = [
   },
   {
     name: 'Trivia Game',
-    description: 'This one was a group project. I worked together with Davig Gonzaga, Thales Daniel, Raphael Soares and Tharcio Sampaio to develop this quiz game. We where also able to use the Scrum and Kanban methods',
+    description: 'This one was a group project. I worked together with Davig Gonzaga, Thales Daniel, Raphael Soares and Tharcio Sampaio to develop this quiz game. We were also able to use the Scrum and Kanban methods',
     color: '#F6F6F6',
     backgroundColor: '#003652',
     img: '/images/trivia-game.png',

@@ -35,7 +35,7 @@ export default function Home() {
         scrollTrigger: {
           id: 'subtitle',
           trigger: subtitle,
-          start: 'top center',
+          start: 'top center+=100',
           toggleActions,
           // markers: true,
         },
@@ -50,7 +50,7 @@ export default function Home() {
         scrollTrigger: {
           id: 'paragraph',
           trigger: subtitle,
-          start: 'top center+=150',
+          start: 'top center+=100',
           toggleActions,
           // markers: true,
         },

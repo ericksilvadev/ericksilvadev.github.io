@@ -5,7 +5,7 @@ const projects = [
     color: '#434018',
     backgroundColor: '#F3EA66',
     img: '/images/shopping-cart.png',
-    href: '/projects/shopping-cart',
+    href: 'shopping-cart',
     date: '',
   },
   {
@@ -14,7 +14,7 @@ const projects = [
     color: '#D6D6D6',
     backgroundColor: '#323332',
     img: '/images/trybewarts.png',
-    href: '/projects/trybewarts',
+    href: 'trybewarts',
     date: '',
   },
   {
@@ -23,7 +23,7 @@ const projects = [
     color: '#3A3A3A',
     backgroundColor: '#DCDCDC',
     img: '/images/calculator.png',
-    href: '/projects/calculator',
+    href: 'calculator',
     date: '',
   },
   {
@@ -32,7 +32,7 @@ const projects = [
     color: '#1B2C45',
     backgroundColor: '#AEBBCE',
     img: '/images/pixels-art.png',
-    href: '/projects/pixels-art',
+    href: 'pixels-art',
     date: '',
   },
   {
@@ -41,7 +41,7 @@ const projects = [
     color: '#3A3A3A',
     backgroundColor: '#DCDCDC',
     img: '/images/todo-list.png',
-    href: '/projects/todo-list',
+    href: 'todo-list',
     date: '',
   },
   {
@@ -50,7 +50,7 @@ const projects = [
     color: '#F6F6F6',
     backgroundColor: '#494C7A',
     img: '/images/trybewallet.png',
-    href: '/projects/todo-list',
+    href: 'trybewallet',
     date: '',
   },
   {
@@ -59,7 +59,7 @@ const projects = [
     color: '#F6F6F6',
     backgroundColor: '#003652',
     img: '/images/trivia-game.png',
-    href: '/projects/todo-list',
+    href: 'trivia-game',
     date: '',
   },
 ];

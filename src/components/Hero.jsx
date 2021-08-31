@@ -66,19 +66,18 @@ export default function Header() {
         <h1 className="title" ref={ (el) => title = el }>
           Hello,
           <br />
-          {' '}
           I&apos;m Erick
           <br />
           {' '}
           Silva
         </h1>
-        <Button
-        className="cv-btn"
-        variant="contained"
-        // onClick={getCV}
-        >
-          Download CV
-        </Button>
+        <a href="/files/erick-silva-cv.png" download>
+          <Button
+          className="cv-btn"
+          >
+            Download CV
+          </Button>
+        </a>
       </div>
       <Parallax
         strength={ 400 }

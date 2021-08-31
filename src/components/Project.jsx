@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { gsap } from 'gsap';
 
-export default function Project({ project: { name, description, color, backgroundColor, img }, id }) {
+export default function Project({ project: { name, description, color, backgroundColor, img, href }, id }) {
   let projectInfos = useRef(null);
     console.log(projectInfos);
 
@@ -105,9 +105,32 @@ export default function Project({ project: { name, description, color, backgroun
         <img src={ img } className={`project-img${id}`} alt={ `${name} thumbnail` } />
         <div className={`under-bar under-bar${id}`} style={ { backgroundColor } } />
       </div>
-      <section ref={ (el) => projectInfos = el } style={ { color, backgroundColor } } className={ `project-info project-info${id}` }>
+      <section
+        ref={ (el) => projectInfos = el }
+        style={ { color, backgroundColor } }
+        className={ `project-info project-info${id}` }
+      >
         <h2 className={`project-title${id}`}>{name}</h2>
         <p className={`project-p${id}`}>{description}</p>
+        <div className="links">
+          <a
+            style={ { color } }
+            href={`https://ericksilvadev.github.io/${href}`}
+            target="_blank" rel="noreferrer"
+          >
+             Demo
+             <i className="fas fa-arrow-right" />
+          </a>
+          <a
+            style={ { color } }
+            href={`https://github.com/ericksilvadev/${href}`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Repository
+            <i className="fas fa-arrow-right" />
+          </a>
+        </div>
       </section>
     </article>
   );

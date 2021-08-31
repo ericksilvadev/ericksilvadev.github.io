@@ -49,7 +49,7 @@ export default function Home() {
         x: -20,
         scrollTrigger: {
           id: 'paragraph',
-          trigger: paragraph,
+          trigger: subtitle,
           start: 'top center+=150',
           toggleActions,
           // markers: true,

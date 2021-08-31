@@ -13,8 +13,11 @@ This is my portfolio, where you can find more about me and my path as a Frontend
 
 ## How to run in your machine
 
+* Clone the repository
+
 In the project directory, run:
 
+### `npm install`
 ### `npm start`
 
 Runs the app in the development mode.<br />

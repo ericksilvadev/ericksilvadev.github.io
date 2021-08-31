@@ -1,7 +1,5 @@
 This is the second version of my portfolio that I created using [ReactJS](https://reactjs.org/).
 
-# ----Working in progress----
-
 # Erick Silva's Portfolio
 
 This is my portfolio, where you can find more about me and my path as a Frontend developer. Here, I show all the projects that I'm most proud of. You can directly access it by clicking here.

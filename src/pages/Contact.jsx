@@ -60,7 +60,14 @@ export default function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_omk2bik', 'template_5nig7zb', e.target, 'user_R88Ea4OX4lVMMHHT8HiBj')
+    const test = {
+      from_name: state.user_name,
+      reply_to: state.user_email,
+      to_name: "Erick Silva",
+      message: state.message,
+    }
+    console.log(e.target);
+    emailjs.send('service_omk2bik', 'template_5nig7zb', test, 'user_R88Ea4OX4lVMMHHT8HiBj')
       .then((r) => console.log(r.text))
       .catch((e) => console.log(e.text))
   };

@@ -739,47 +739,14 @@ body {
   }
 }
 
-@media screen and (width: 1024px) {
-  .skillsets {
-    width: 94vw;
-  }
-}
-
-@media screen and (width: 768px) {
-  body {
-    font-size: 12px;
-  }
+@media screen and (min-width: 768px) {
   .skillsets {
     width: 95vw;
   }
 }
 
-@media screen and (max-width: 414px) {
-  .skillsets {
-    width: 90.5vw;
-  }
-}
-
-@media screen and (width: 375px) {
-  .skillsets {
-    width: 89vw;
-  }
-}
-
-@media screen and (width: 360px) {
-  .skillsets {
-    width: 86vw;
-  }
-}
-
-@media screen and (width: 320px) {
-  .skillsets {
-    width: 88vw;
-  }
-}
-
 .contact-page {
-  min-height: 89vh;
+  height: auto;
   width: 100vw;
 }
 
@@ -1112,6 +1079,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 15vh;
+  height: 10em;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    font-size: 1.5em;
+    height: 8em;
+  }
 }
 /*# sourceMappingURL=main.css.map */

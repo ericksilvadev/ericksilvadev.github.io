@@ -2,5 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 15vh;
+  height: 10em;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    font-size: 1.5em;
+    height: 8em;
+  }
 }

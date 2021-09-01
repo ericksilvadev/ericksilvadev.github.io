@@ -200,6 +200,7 @@
     flex-direction: column;
     align-items: center;
     width: 100vw;
+    height: auto;
 
     .contact-container {
       flex-direction: column-reverse;
@@ -212,6 +213,11 @@
       .contact-social {
         width: 100%;
         height: 20%;
+      }
+
+      .success-message {
+        width: 100%;
+        height: 80%;
       }
     }
   }

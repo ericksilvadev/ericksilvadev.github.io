@@ -11,7 +11,7 @@ const INITIAL_STATE = {
   nameError: '',
   emailError: '',
   messageError: '',
-  succesMessage: '',
+  successMessage: '',
   validate: false,
   count: 0,
 };
@@ -77,9 +77,9 @@ export default function Contact() {
             <li><a target="_blank" className="fab fa-instagram" href="https://www.instagram.com/ericksilvadev/" rel="noreferrer" /></li>
           </ul>
         </div>
-        {state.succesMessage
+        {state.successMessage
         && <div className="success-message">
-          <p>{state.succesMessage}</p>
+          <p>{state.successMessage}</p>
           <Button
             type="button"
             onClick={ () => {
@@ -89,7 +89,7 @@ export default function Contact() {
             Send another message
           </Button>
         </div>}
-        {!state.succesMessage
+        {!state.successMessage
         && <div className="contact-form">
           <h2>Get in touch</h2>
           <form className="contact-form" onSubmit={ (e) => {
@@ -99,7 +99,7 @@ export default function Contact() {
               console.log('test');
               setState({
                 ...INITIAL_STATE,
-                succesMessage: 'Message sent, I\'ll answer you soon!',
+                successMessage: 'Message sent, I\'ll answer you soon!',
               });
             }
             } }

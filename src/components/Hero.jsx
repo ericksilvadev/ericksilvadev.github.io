@@ -71,7 +71,7 @@ export default function Header() {
           {' '}
           Silva
         </h1>
-        <a href="/files/erick-silva-cv.png" download>
+        <a href="/files/erick-silva-cv.pdf" download>
           <Button
           className="cv-btn"
           >

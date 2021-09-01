@@ -7,7 +7,7 @@
     @include pages-title;
     margin: 15vh 0vw 7vh 10vw;
     width: 90%;
-    text-align: center;
+    text-align: left;
   }
 
   ul {
@@ -52,6 +52,7 @@
     width: 89vw;
     h1 {
       margin: 2.5em auto 1em auto;
+      text-align: center;
     }
     ul {
       display: flex;

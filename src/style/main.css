@@ -640,7 +640,7 @@ body {
   font-size: 5.3em;
   margin: 15vh 0vw 7vh 10vw;
   width: 90%;
-  text-align: center;
+  text-align: left;
 }
 
 .skillsets ul {
@@ -693,6 +693,7 @@ body {
   }
   .skillsets h1 {
     margin: 2.5em auto 1em auto;
+    text-align: center;
   }
   .skillsets ul {
     display: -webkit-box;

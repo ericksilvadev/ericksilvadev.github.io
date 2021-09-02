@@ -958,7 +958,7 @@ body {
 
 .error-message {
   position: absolute;
-  font-size: 13px;
+  font-size: 1em;
   -ms-flex-item-align: start;
       align-self: flex-start;
   -webkit-transform: translateY(-1.2em);
@@ -1025,6 +1025,10 @@ body {
   .contact-page .contact-container .contact-form form .textarea-container .message-counter {
     -webkit-transform: translate(1.2em, -3em);
             transform: translate(1.2em, -3em);
+  }
+  .error-message {
+    -webkit-transform: translate(0.6em, -0.8em);
+            transform: translate(0.6em, -0.8em);
   }
 }
 

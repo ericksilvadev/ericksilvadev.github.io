@@ -151,7 +151,7 @@
 
 .error-message {
   position: absolute;
-  font-size: 13px;
+  font-size: 1em;
   align-self: flex-start;
   transform: translateY(-1.2em);
   color: rgb(253, 39, 39);
@@ -192,6 +192,10 @@
   }
   .contact-page .contact-container .contact-form form .textarea-container .message-counter {
     transform: translate(1.2em, -3em);
+  }
+
+  .error-message {
+    transform: translate(0.6em, -0.8em);
   }
 }
 

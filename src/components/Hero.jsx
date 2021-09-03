@@ -41,7 +41,7 @@ export default function Header() {
   // }
 
   return (
-    <main className="main-page">
+    <main className="main-page" id="home">
       <Parallax
         strength={ 800 }
         className="background"

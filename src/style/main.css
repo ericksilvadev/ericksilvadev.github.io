@@ -7,7 +7,6 @@
 
 html {
   scroll-behavior: smooth;
-  scrollbar-color: black;
 }
 
 ::-moz-selection {
@@ -38,11 +37,40 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  width: 100%;
+  width: 100vw;
   margin: auto;
   background-color: #f3f3f3;
-  font-size: 16px;
-  overflow-x: hidden;
+}
+
+.back-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.555);
+  cursor: pointer;
+  width: 1.8em;
+  height: 1.5em;
+  position: fixed;
+  left: -2em;
+  bottom: 2em;
+  background-color: #E9708E;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.back-top.show {
+  left: 0;
+}
+
+.back-top:hover {
+  background-color: #da6b86;
 }
 
 @media screen and (max-width: 1500px) {
@@ -87,7 +115,7 @@ body {
   padding: 40px 4vw;
   color: #042528;
   position: absolute;
-  width: calc(100vw - 8vw);
+  width: 100vw;
 }
 
 .header .logo {
@@ -388,9 +416,8 @@ body {
 
 .projects-page {
   color: #042528;
-  padding-top: 1px;
+  width: 96vw;
   margin: auto;
-  width: 100vw;
 }
 
 .projects-page h1 {
@@ -402,6 +429,7 @@ body {
 .projects-page .project {
   margin: 5em auto;
   height: 70vh;
+  min-width: 100%;
   min-height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -434,6 +462,7 @@ body {
 
 .projects-page .project .project-info {
   height: calc(100% - 8em);
+  width: 100%;
   padding: 4em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -560,10 +589,8 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 90vw;
+    width: 95vw;
     height: auto;
-    padding: 0;
-    margin: 0 1vw 0 0;
   }
   .projects-page h1 {
     margin-bottom: 1em;
@@ -592,6 +619,9 @@ body {
   }
   .projects-page .project .under-bar, .projects-page .project:nth-of-type(even) .under-bar {
     display: none;
+  }
+  .projects-page .project .project-info, .projects-page .project:nth-of-type(even) .project-info {
+    width: calc(100% - 8em);
   }
   .projects-page .project .project-info h2, .projects-page .project:nth-of-type(even) .project-info h2 {
     margin-top: 0;
@@ -632,6 +662,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100vw;
+  margin: auto;
 }
 
 .skillsets h1 {

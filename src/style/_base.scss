@@ -14,7 +14,6 @@ $paragraph: #404949f3;
 
 html {
   scroll-behavior: smooth;
-  scrollbar-color: black;
 }
 
 ::selection {
@@ -42,12 +41,33 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  width: 100%;
+  width: 100vw;
   margin: auto;
-  // max-width: 1920px;
   background-color: #f3f3f3;
-  font-size: 16px;
-  overflow-x: hidden;
+}
+
+.back-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.555);
+  cursor: pointer;
+  width: 1.8em;
+  height: 1.5em;
+  position: fixed;
+  left: -2em;
+  bottom: 2em;
+  background-color: $secondary;
+  transition: .3s;
+
+  &.show {
+    left: 0;
+  }
+
+  &:hover {
+    background-color: $secondary-dark;
+  }
 }
 
 @mixin pages-title {

@@ -4,16 +4,16 @@ import { gsap } from 'gsap';
 export default function Skillsets() {
   // const timeline = gsap.timeline({ repeat: 0, repeatDelay: 1 });
   useEffect(() => {
-    gsap.fromTo('.skillsets',
-    { autoAlpha: 0 },
+    gsap.fromTo('.skillsets-title',
+    { autoAlpha: 0, x: -20 },
     {
       duration: 0.5,
       autoAlpha: 1,
-      x: 20,
+      x: 0,
       ease: 'none',
       scrollTrigger: {
         id: 'title',
-        trigger: '.skillsets',
+        trigger: '.skillsets-title',
         start: 'top center',
         toggleActions: 'play none none',
         // markers: true,
@@ -29,7 +29,7 @@ export default function Skillsets() {
         ease: 'none',
         scrollTrigger: {
           trigger: '.main-skills',
-          start: 'top center',
+          start: 'top center+=200',
           toggleActions: 'play none none',
         },
       });
@@ -44,7 +44,7 @@ export default function Skillsets() {
         ease: 'none',
         scrollTrigger: {
           trigger: '.main-skills',
-          start: 'top center',
+          start: 'top center+=200',
           toggleActions: 'play none none',
         },
       });
@@ -59,7 +59,7 @@ export default function Skillsets() {
         ease: 'none',
         scrollTrigger: {
           trigger: '.main-skills',
-          start: 'top center',
+          start: 'top center+=200',
           toggleActions: 'play none none',
         },
       });
@@ -74,7 +74,7 @@ export default function Skillsets() {
         ease: 'none',
         scrollTrigger: {
           trigger: '.main-skills',
-          start: 'top center',
+          start: 'top center+=200',
           toggleActions: 'play none none',
         },
       });
@@ -89,14 +89,14 @@ export default function Skillsets() {
         ease: 'none',
         scrollTrigger: {
           trigger: '.main-skills',
-          start: 'top center',
+          start: 'top center+=200',
           toggleActions: 'play none none',
         },
       });
   }, []);
   return (
     <div className="skillsets">
-      <h1>My Skillsets</h1>
+      <h1 className="skillsets-title">My Skillsets</h1>
       <ul className="secondary-skills">
         <li><img src="/images/redux.svg" alt="" /></li>
         <li><img src="/images/jest-icon.svg" alt="" /></li>

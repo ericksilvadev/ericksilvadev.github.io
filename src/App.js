@@ -1,5 +1,6 @@
 import React from 'react';
 import { Home, About, Projects, Skillsets, Contact } from './pages';
+import BackToTop from './components/BackToTop';
 import Footer from './components/Footer';
 import './style/main.css';
 
@@ -12,6 +13,7 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
+      <BackToTop />
     </>
   );
 }

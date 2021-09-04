@@ -993,8 +993,8 @@ body {
   font-size: 1em;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  -webkit-transform: translateY(-1.2em);
-          transform: translateY(-1.2em);
+  -webkit-transform: translateY(-1em);
+          transform: translateY(-1em);
   color: #fd2727;
 }
 

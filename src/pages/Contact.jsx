@@ -128,7 +128,7 @@ export default function Contact() {
                 className={ state.emailError ? 'invalid' : '' }
                 value={ state.email }
                 name="user_email"
-                type="email"
+                type="text"
                 placeholder="email@example.com"
               />
               { state.emailError && <p className="error-message">{state.emailError}</p> }

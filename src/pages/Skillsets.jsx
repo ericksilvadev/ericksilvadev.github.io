@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 
 export default function Skillsets() {
-  // const timeline = gsap.timeline({ repeat: 0, repeatDelay: 1 });
   useEffect(() => {
     gsap.fromTo('.skillsets-title',
     { autoAlpha: 0, x: -20 },
@@ -16,7 +15,6 @@ export default function Skillsets() {
         trigger: '.skillsets-title',
         start: 'top center',
         toggleActions: 'play none none',
-        // markers: true,
       },
     });
     gsap.fromTo('.secondary-skills',

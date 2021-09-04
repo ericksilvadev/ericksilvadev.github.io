@@ -17,7 +17,6 @@ export default function Projects() {
           trigger: '.projects-title',
           start: 'top center',
           toggleActions: 'play none none',
-          // markers: true,
         },
       });
   });

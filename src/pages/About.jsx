@@ -22,7 +22,6 @@ export default function Home() {
           trigger: title,
           start: 'top center',
           toggleActions,
-          // markers: true,
         },
       });
     gsap.fromTo(subtitle,
@@ -37,7 +36,6 @@ export default function Home() {
           trigger: subtitle,
           start: 'top center+=100',
           toggleActions,
-          // markers: true,
         },
       });
     gsap.fromTo(paragraph,
@@ -52,7 +50,6 @@ export default function Home() {
           trigger: subtitle,
           start: 'top center+=100',
           toggleActions,
-          // markers: true,
         },
       });
   }, []);

@@ -23,7 +23,6 @@ export default function Project({ project: { name, description, color, backgroun
           trigger: `.project-img${id}`,
           start: 'top center',
           toggleActions: 'play none none',
-          // markers: true,
         }
       }
     );
@@ -39,7 +38,6 @@ export default function Project({ project: { name, description, color, backgroun
           trigger: `.project-img${id}`,
           start: 'top center',
           toggleActions: 'play none none',
-          // markers: true,
         }
       }
     );
@@ -57,7 +55,6 @@ export default function Project({ project: { name, description, color, backgroun
           trigger: `.project-img${id}`,
           start: 'top center',
           toggleActions: 'play none none',
-          // markers: true,
         }
       }
     );
@@ -74,7 +71,6 @@ export default function Project({ project: { name, description, color, backgroun
           trigger: `.project-img${id}`,
           start: 'top center',
           toggleActions: 'play none none',
-          // markers: true,
         }
       }
     );
@@ -91,7 +87,6 @@ export default function Project({ project: { name, description, color, backgroun
           trigger: `.project-img${id}`,
           start: 'top center - 100px',
           toggleActions: 'play none none',
-          // markers: true,
         }
       }
     );

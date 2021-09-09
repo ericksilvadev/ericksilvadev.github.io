@@ -95,12 +95,12 @@ export default function Project({ project: { name, description, color, backgroun
   if (!name) { return <div>LOADING...</div>; }
 
   return (
-    <article className="project">
+    <section className="project">
       <div className="img-container">
         <img src={ img } className={`project-img${id}`} alt={ `${name} thumbnail` } />
         <div className={`under-bar under-bar${id}`} style={ { backgroundColor } } />
       </div>
-      <section
+      <article
         ref={ (el) => projectInfos = el }
         style={ { color, backgroundColor } }
         className={ `project-info project-info${id}` }
@@ -126,8 +126,8 @@ export default function Project({ project: { name, description, color, backgroun
             <i className="fas fa-arrow-right" />
           </a>
         </div>
-      </section>
-    </article>
+      </article>
+    </section>
   );
 }
 

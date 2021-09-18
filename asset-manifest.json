@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.b03fa61f.chunk.css",
-    "main.js": "/static/js/main.18469895.chunk.js",
-    "main.js.map": "/static/js/main.18469895.chunk.js.map",
+    "main.css": "/static/css/main.df015c5b.chunk.css",
+    "main.js": "/static/js/main.59e90119.chunk.js",
+    "main.js.map": "/static/js/main.59e90119.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5164936e.js",
     "runtime-main.js.map": "/static/js/runtime-main.5164936e.js.map",
     "static/js/2.42c16a44.chunk.js": "/static/js/2.42c16a44.chunk.js",
     "static/js/2.42c16a44.chunk.js.map": "/static/js/2.42c16a44.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.b03fa61f.chunk.css.map": "/static/css/main.b03fa61f.chunk.css.map",
+    "static/css/main.df015c5b.chunk.css.map": "/static/css/main.df015c5b.chunk.css.map",
     "static/js/2.42c16a44.chunk.js.LICENSE.txt": "/static/js/2.42c16a44.chunk.js.LICENSE.txt",
     "static/media/erick-silva-logo.1ea7175d.svg": "/static/media/erick-silva-logo.1ea7175d.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.5164936e.js",
     "static/js/2.42c16a44.chunk.js",
-    "static/css/main.b03fa61f.chunk.css",
-    "static/js/main.18469895.chunk.js"
+    "static/css/main.df015c5b.chunk.css",
+    "static/js/main.59e90119.chunk.js"
   ]
 }

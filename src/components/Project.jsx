@@ -6,8 +6,8 @@ export default function Project({ project: { name, description, color, backgroun
   let projectInfos = useRef(null);
     console.log(projectInfos);
 
-  let underBar = window.matchMedia("(max-width: 1024px) and (max-height: 1366px)").matches ? 400 : 500;
-  underBar = window.matchMedia("(max-width: 768px)").matches ? 0 : 500;
+  // let underBar = window.matchMedia("(max-width: 1024px) and (max-height: 1366px)").matches ? 400 : 500;
+  // underBar = window.matchMedia("(max-width: 768px)").matches ? 0 : 500;
   
 
   useEffect(() => {
@@ -48,7 +48,7 @@ export default function Project({ project: { name, description, color, backgroun
         duration: 0.6,
         delay: .5,
         opacity: 1,
-        width: underBar,
+        width: window.innerWidth * 0.3,
         ease: 'none',
         scrollTrigger: {
           id: `.under-bar${id}`,
@@ -59,12 +59,12 @@ export default function Project({ project: { name, description, color, backgroun
       }
     );
     gsap.fromTo(`.project-p${id}`,
-      { opacity: 0 },
+      { opacity: 0, y: id % 2 ? -20 : 20 },
       { 
         duration: 0.3,
         opacity: 1,
         delay: .7,
-        y: id % 2 ? -20 : 20,
+        y: 0,
         ease: 'none',
         scrollTrigger: {
           id: `.project-p${id}`,
@@ -75,12 +75,12 @@ export default function Project({ project: { name, description, color, backgroun
       }
     );
     gsap.fromTo(`.project-title${id}`,
-      { opacity: 0 },
+      { opacity: 0, y: id % 2 ? -20 : 20 },
       { 
         duration: 0.3,
         opacity: 1,
         delay: .4,
-        y: id % 2 ? -20 : 20,
+        y: 0,
         ease: 'none',
         scrollTrigger: {
           id: `.project-title${id}`,

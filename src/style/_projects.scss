@@ -43,7 +43,7 @@
 
       p {
         font-size: 1.3em;
-        margin-bottom: 5em;
+        margin: 1em 0 4em;
       }
 
       .links {
@@ -88,10 +88,6 @@
     }
 
     .project-info {
-      p {
-        margin-bottom: 5em;
-      }
-
       .links {
         justify-content: flex-end;
       }
@@ -165,9 +161,6 @@
       }
     }
     .project:nth-of-type(even) {
-      // .project-info h2 {
-      //   // margin-top: 1.5em;
-      // }
       .project-info p {
         margin: 2em 0;
       }

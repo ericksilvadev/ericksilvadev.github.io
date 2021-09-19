@@ -120,7 +120,7 @@
     flex-direction: column;
     align-items: center;
     width: 95vw;
-    height: auto;
+    // height: auto;
 
     h1 {
       margin-bottom: 1em;
@@ -128,8 +128,8 @@
 
     .project, .project:nth-of-type(even) {
       height: auto;
-      margin: 70px 0;
-      max-height: 65vh;
+      margin: 3em 0;
+      // max-height: 65vh;
       flex-direction: column;
       justify-content: center;
       text-align: left;

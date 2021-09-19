@@ -311,6 +311,12 @@ body {
   }
 }
 
+@media screen and (max-width: 428px) {
+  .header .header-nav {
+    width: 36% !important;
+  }
+}
+
 @media screen and (max-width: 414px) {
   .header .header-nav {
     width: 35% !important;
@@ -582,15 +588,13 @@ body {
         -ms-flex-align: center;
             align-items: center;
     width: 95vw;
-    height: auto;
   }
   .projects-page h1 {
     margin-bottom: 1em;
   }
   .projects-page .project, .projects-page .project:nth-of-type(even) {
     height: auto;
-    margin: 70px 0;
-    max-height: 65vh;
+    margin: 3em 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -709,7 +713,7 @@ body {
 
 @media screen and (max-width: 1024px) {
   .skillsets {
-    width: 89vw;
+    width: 90vw;
   }
   .skillsets h1 {
     margin: 2.5em auto 1em auto;
@@ -1082,7 +1086,7 @@ body {
   }
   .contact-page .contact-container .contact-social {
     width: 100%;
-    height: 10vh;
+    height: 85px;
   }
   .contact-page .contact-container .success-message {
     width: 100%;

@@ -174,6 +174,12 @@
   }
 }
 
+@media screen and (max-width: 428px) {
+  .header .header-nav {
+    width: 36% !important;
+  }
+}
+
 @media screen and (max-width: 414px) {
   .header .header-nav {
     width: 35% !important;

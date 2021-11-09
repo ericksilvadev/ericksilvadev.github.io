@@ -6,7 +6,7 @@
   padding: 40px 4vw;
   color: $primary-dark;
   position: absolute;
-  width: 100vw;
+  width: calc(100% - 80px);
 
   .logo {
     cursor: pointer;
@@ -15,7 +15,7 @@
   .header-nav {
     display: flex;
     width: 53%;
-    
+
     .nav-bar {
       display: flex;
       justify-content: flex-end;
@@ -33,11 +33,11 @@
         li {
           margin-right: 2em;
           text-transform: uppercase;
-          letter-spacing: .4em;
+          letter-spacing: 0.4em;
           font-weight: 600;
           cursor: pointer;
 
-          &::after{
+          &::after {
             content: '';
             position: absolute;
             width: 0px;
@@ -94,7 +94,7 @@
       font-weight: 600;
       background-color: $secondary;
       box-shadow: none;
-      letter-spacing: .4em;
+      letter-spacing: 0.4em;
       font-size: 1.35em;
 
       &:hover {
@@ -126,7 +126,7 @@
 
     .header-nav .nav-bar ul {
       display: block;
-      
+
       li {
         margin: 2em 0;
       }
@@ -147,9 +147,9 @@
       width: 32%;
       .nav-bar ul {
         display: flex;
-        
+
         li {
-          margin: 0 .5em;
+          margin: 0 0.5em;
         }
       }
     }
@@ -208,6 +208,5 @@
     .header-nav {
       width: 22%;
     }
-
   }
 }

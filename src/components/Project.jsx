@@ -2,18 +2,21 @@ import React, { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { gsap } from 'gsap';
 
-export default function Project({ project: { name, description, color, backgroundColor, img, href }, id }) {
+export default function Project({
+  project: { name, description, color, backgroundColor, img, href, repository },
+  id,
+}) {
   let projectInfos = useRef(null);
-    console.log(projectInfos);
+  console.log(projectInfos);
 
   // let underBar = window.matchMedia("(max-width: 1024px) and (max-height: 1366px)").matches ? 400 : 500;
   // underBar = window.matchMedia("(max-width: 768px)").matches ? 0 : 500;
-  
 
   useEffect(() => {
-    gsap.fromTo(`.project-img${id}`,
+    gsap.fromTo(
+      `.project-img${id}`,
       { opacity: 0 },
-      { 
+      {
         duration: 0.3,
         opacity: 1,
         ease: 'none',
@@ -23,14 +26,15 @@ export default function Project({ project: { name, description, color, backgroun
           trigger: `.project-img${id}`,
           start: 'top center',
           toggleActions: 'play none none',
-        }
+        },
       }
     );
-    gsap.fromTo(projectInfos,
+    gsap.fromTo(
+      projectInfos,
       { opacity: 0 },
-      { 
+      {
         duration: 0.6,
-        delay: .5,
+        delay: 0.5,
         opacity: 1,
         ease: 'none',
         scrollTrigger: {
@@ -38,15 +42,15 @@ export default function Project({ project: { name, description, color, backgroun
           trigger: `.project-img${id}`,
           start: 'top center',
           toggleActions: 'play none none',
-        }
+        },
       }
     );
-      gsap.fromTo(
-        `.under-bar${id}`,
-        { opacity: 0, width: 0 },
-        {
+    gsap.fromTo(
+      `.under-bar${id}`,
+      { opacity: 0, width: 0 },
+      {
         duration: 0.6,
-        delay: .5,
+        delay: 0.5,
         opacity: 1,
         width: window.innerWidth * 0.3,
         ease: 'none',
@@ -55,15 +59,16 @@ export default function Project({ project: { name, description, color, backgroun
           trigger: `.project-img${id}`,
           start: 'top center',
           toggleActions: 'play none none',
-        }
+        },
       }
     );
-    gsap.fromTo(`.project-p${id}`,
+    gsap.fromTo(
+      `.project-p${id}`,
       { opacity: 0, y: id % 2 ? -20 : 20 },
-      { 
+      {
         duration: 0.3,
         opacity: 1,
-        delay: .7,
+        delay: 0.7,
         y: 0,
         ease: 'none',
         scrollTrigger: {
@@ -71,15 +76,16 @@ export default function Project({ project: { name, description, color, backgroun
           trigger: `.project-img${id}`,
           start: 'top center',
           toggleActions: 'play none none',
-        }
+        },
       }
     );
-    gsap.fromTo(`.project-title${id}`,
+    gsap.fromTo(
+      `.project-title${id}`,
       { opacity: 0, y: id % 2 ? -20 : 20 },
-      { 
+      {
         duration: 0.3,
         opacity: 1,
-        delay: .4,
+        delay: 0.4,
         y: 0,
         ease: 'none',
         scrollTrigger: {
@@ -87,38 +93,36 @@ export default function Project({ project: { name, description, color, backgroun
           trigger: `.project-img${id}`,
           start: 'top center - 100px',
           toggleActions: 'play none none',
-        }
+        },
       }
     );
-  })
+  });
 
-  if (!name) { return <div>LOADING...</div>; }
+  if (!name) {
+    return <div>LOADING...</div>;
+  }
 
   return (
     <section className="project">
       <div className="img-container">
-        <img src={ img } className={`project-img${id}`} alt={ `${name} thumbnail` } />
-        <div className={`under-bar under-bar${id}`} style={ { backgroundColor } } />
+        <img src={img} className={`project-img${id}`} alt={`${name} thumbnail`} />
+        <div className={`under-bar under-bar${id}`} style={{ backgroundColor }} />
       </div>
       <article
-        ref={ (el) => projectInfos = el }
-        style={ { color, backgroundColor } }
-        className={ `project-info project-info${id}` }
+        ref={(el) => (projectInfos = el)}
+        style={{ color, backgroundColor }}
+        className={`project-info project-info${id}`}
       >
         <h2 className={`project-title${id}`}>{name}</h2>
         <p className={`project-p${id}`}>{description}</p>
         <div className="links">
-          <a
-            style={ { color } }
-            href={`https://ericksilvadev.github.io/${href}`}
-            target="_blank" rel="noreferrer"
-          >
-             Demo
-             <i className="fas fa-arrow-right" />
+          <a style={{ color }} href={href} target="_blank" rel="noreferrer">
+            Demo
+            <i className="fas fa-arrow-right" />
           </a>
           <a
-            style={ { color } }
-            href={`https://github.com/ericksilvadev/${href}`}
+            style={{ color }}
+            href={`https://github.com/ericksilvadev/${repository}`}
             target="_blank"
             rel="noreferrer"
           >
@@ -139,6 +143,7 @@ Project.propTypes = {
     backgroundColor: PropTypes.string,
     img: PropTypes.string,
     href: PropTypes.string,
+    repository: PropTypes.string,
   }).isRequired,
   id: PropTypes.string.isRequired,
 };

@@ -5,7 +5,8 @@ const projects = [
     color: '#CDCFE8',
     backgroundColor: '#10101C',
     img: '/images/todo-list.png',
-    href: 'todo-list',
+    href: 'https://todo-list-mauve-alpha.vercel.app/',
+    repository: 'todo-list-2.0',
     date: '',
   },
   {
@@ -14,7 +15,8 @@ const projects = [
     color: '#F6F6F6',
     backgroundColor: '#003652',
     img: '/images/trivia-game.png',
-    href: 'trivia-game',
+    href: 'https://ericksilvadev.github.io/trivia-game',
+    repository: 'trivia-game',
     date: '',
   },
   {
@@ -23,7 +25,8 @@ const projects = [
     color: '#434018',
     backgroundColor: '#F3EA66',
     img: '/images/shopping-cart.png',
-    href: 'shopping-cart',
+    href: 'https://ericksilvadev.github.io/shopping-cart',
+    repository: 'shopping-cart',
     date: '',
   },
   {
@@ -32,7 +35,8 @@ const projects = [
     color: '#D6D6D6',
     backgroundColor: '#323332',
     img: '/images/trybewarts.png',
-    href: 'trybewarts',
+    href: 'https://ericksilvadev.github.io/trybewarts',
+    repository: 'trybewarts',
     date: '',
   },
   {
@@ -41,7 +45,8 @@ const projects = [
     color: '#3A3A3A',
     backgroundColor: '#DCDCDC',
     img: '/images/calculator.png',
-    href: 'calculator',
+    href: 'https://ericksilvadev.github.io/calculator',
+    repository: 'calculator',
     date: '',
   },
   {
@@ -50,7 +55,8 @@ const projects = [
     color: '#1B2C45',
     backgroundColor: '#AEBBCE',
     img: '/images/pixels-art.png',
-    href: 'pixels-art',
+    href: 'https://ericksilvadev.github.io/pixels-art',
+    repository: 'pixels-art',
     date: '',
   },
   {
@@ -59,7 +65,8 @@ const projects = [
     color: '#F6F6F6',
     backgroundColor: '#494C7A',
     img: '/images/trybewallet.png',
-    href: 'trybewallet',
+    href: 'https://ericksilvadev.github.io/trybewallet',
+    repository: 'trybewallet',
     date: '',
   },
 ];

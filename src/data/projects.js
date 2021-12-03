@@ -2,7 +2,7 @@ const projects = [
   {
     name: 'To Do List',
     description:
-      'In this project, I created a dynamic todo list witch items can be added, deleted and moved. The tasks are saved in the localStorage and can be seen in the same way in a new visit to the page.',
+      'In this project, I created a dynamic todo list witch items can be added, deleted and moved. I used mainly ReactJS with TypeScripts and Sass for styles. The tasks are saved in the localStorage and can be seen in the same way in a new visit to the page.',
     color: '#CDCFE8',
     backgroundColor: '#10101C',
     img: '/images/todo-list.png',
@@ -13,7 +13,7 @@ const projects = [
   {
     name: 'dt money',
     description:
-      'Here, I worked using ReactJs with TypeScript and for styles, I chose to use Styled Components. I was also able to use some libraries like Formik, yup and react-modal for the form development.',
+      'Here, I worked using ReactJs with TypeScript to create a transaction maganer app simulation, and for styles, I chose to use Styled Components. I was also able to use some libraries like Formik, yup and react-modal for the form development.',
     color: '#F6F6F6',
     backgroundColor: '#4A24B2',
     img: '/images/dt-money.png',
@@ -24,7 +24,7 @@ const projects = [
   {
     name: 'Trivia Game',
     description:
-      'This one was a group project. I worked together with Davig Gonzaga, Thales Daniel, Raphael Soares and Tharcio Sampaio to develop this quiz game. We were also able to use the Scrum and Kanban methods',
+      'This one was a group project. I worked together with Davig Gonzaga, Thales Daniel, Raphael Soares and Tharcio Sampaio to develop this quiz game. We used ReactJS and Redux to manage the app data, Sass for styles and Open Trivia DB API to generate the questions.',
     color: '#F6F6F6',
     backgroundColor: '#003652',
     img: '/images/trivia-game.png',

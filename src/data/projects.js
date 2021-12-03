@@ -24,7 +24,7 @@ const projects = [
   {
     name: 'Trivia Game',
     description:
-      'This one was a group project. I worked together with Davig Gonzaga, Thales Daniel, Raphael Soares and Tharcio Sampaio to develop this quiz game. We used ReactJS and Redux to manage the app data, Sass for styles and Open Trivia DB API to generate the questions.',
+      'This one was a group project. I worked together with David Gonzaga, Thales Daniel, Raphael Soares and Tharcio Sampaio to develop this quiz game. We used ReactJS and Redux to manage the app data, Sass for styles and Open Trivia DB API to generate the questions.',
     color: '#F6F6F6',
     backgroundColor: '#003652',
     img: '/images/trivia-game.png',

@@ -5,7 +5,8 @@ import projects from '../data/projects';
 
 export default function Projects() {
   useEffect(() => {
-    gsap.fromTo('.projects-title',
+    gsap.fromTo(
+      '.projects-title',
       { autoAlpha: 0, x: -20 },
       {
         duration: 0.5,
@@ -18,12 +19,15 @@ export default function Projects() {
           start: 'top center',
           toggleActions: 'play none none',
         },
-      });
+      }
+    );
   });
   return (
     <div className="projects-page" id="projects">
       <h1 className="projects-title">Projects</h1>
-      {projects.map((project, i) => <Project project={ project } id={ i } key={ i } />)}
+      {projects.map((project, i) => (
+        <Project project={project} id={i} key={i} />
+      ))}
     </div>
   );
 }

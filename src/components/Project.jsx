@@ -105,8 +105,15 @@ export default function Project({
   return (
     <section className="project">
       <div className="img-container">
-        <img src={img} className={`project-img${id}`} alt={`${name} thumbnail`} />
-        <div className={`under-bar under-bar${id}`} style={{ backgroundColor }} />
+        <img
+          src={img}
+          className={`project-img${id}`}
+          alt={`${name} thumbnail`}
+        />
+        <div
+          className={`under-bar under-bar${id}`}
+          style={{ backgroundColor }}
+        />
       </div>
       <article
         ref={(el) => (projectInfos = el)}

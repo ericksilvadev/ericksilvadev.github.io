@@ -10,7 +10,8 @@ export default function Home() {
   let paragraph = useRef(null);
   useEffect(() => {
     const toggleActions = 'play none none';
-    gsap.fromTo(title,
+    gsap.fromTo(
+      title,
       { autoAlpha: 0 },
       {
         duration: 0.5,
@@ -23,8 +24,10 @@ export default function Home() {
           start: 'top center',
           toggleActions,
         },
-      });
-    gsap.fromTo(subtitle,
+      }
+    );
+    gsap.fromTo(
+      subtitle,
       { autoAlpha: 0 },
       {
         duration: 0.5,
@@ -37,8 +40,10 @@ export default function Home() {
           start: 'top center+=100',
           toggleActions,
         },
-      });
-    gsap.fromTo(paragraph,
+      }
+    );
+    gsap.fromTo(
+      paragraph,
       { autoAlpha: 0 },
       {
         duration: 0.5,
@@ -51,33 +56,34 @@ export default function Home() {
           start: 'top center+=100',
           toggleActions,
         },
-      });
+      }
+    );
   }, []);
 
-  
   return (
     <div className="about-page" id="about">
-      <h1 className="about-title" ref={ (e) => title = e }>About me</h1>
-      <h3 className="about-subtitle" ref={ (e) => subtitle = e }>
-        I am a Frontend developer, currently specializing in ReactJS.
+      <h1 className="about-title" ref={(e) => (title = e)}>
+        About me
+      </h1>
+      <h3 className="about-subtitle" ref={(e) => (subtitle = e)}>
+        I am a Frontend developer, currently working with ReactJS and
+        TypeScript.
       </h3>
-      <p className="about-paragraph" ref={ (e) => paragraph = e }>
-        I&apos;m 22 years old and currently live in Brazil.
-        {' '}
-        <br />
-        Studying Software Development since april 2021, I found myself completely
-        in love with this area during this year.
-        {' '}
-        <br />
-        This is a space for me to show some
-        of my work and evolution throughout these months.
-        {' '}
-        <br />
-        You can find more projects on
-        {' '}
-        <a target="_blank" rel="noreferrer" href="https://github.com/ericksilvadev">my GitHub page</a>
+      <p className="about-paragraph" ref={(e) => (paragraph = e)}>
+        I&apos;m 22 years old and currently live in Brazil. <br />
+        Studying Software Development since april 2021, I found myself
+        completely in love with this area during this year. <br />
+        This is a space for me to show some of my work and evolution throughout
+        these months. <br />
+        You can find more projects on{' '}
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/ericksilvadev"
+        >
+          my GitHub page
+        </a>
         .
-
       </p>
     </div>
   );

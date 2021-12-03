@@ -5,9 +5,9 @@ export default function BackToTop() {
 
   window.onscroll = () => {
     setScreenPos(window.pageYOffset);
-  }
+  };
   const showIcon = screenPos > 1000 ? 'show' : '';
   return (
     <a href="#home" className={`${showIcon} back-top fas fa-chevron-up`} />
-  )
+  );
 }

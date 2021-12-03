@@ -7,7 +7,7 @@
   align-items: flex-end;
   color: $paragraph;
   margin-right: 4vw;
-  
+
   h1 {
     @include pages-title;
     margin-top: 5vh;
@@ -43,7 +43,6 @@
     margin: 0;
     margin-top: 50vh;
 
-    
     h1 {
       align-self: flex-end;
       margin: 3em 10vw 1em 0;

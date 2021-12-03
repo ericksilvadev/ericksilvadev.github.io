@@ -10,74 +10,75 @@ export default function Header() {
     gsap.fromTo(
       '.profile-pic',
       { width: 0, opacity: 0 },
-      { delay: 0.5, duration: 1, opacity: 1, width: 490, ease: 'sine' },
+      { delay: 0.5, duration: 1, opacity: 1, width: 490, ease: 'sine' }
     );
     gsap.fromTo(
       '.background',
       { opacity: 0 },
-      { delay: 1.2, duration: 0.5, opacity: 1, y: -20, ease: 'sine' },
+      { delay: 1.2, duration: 0.5, opacity: 1, y: -20, ease: 'sine' }
     );
     gsap.fromTo(
       '.cv-btn',
       { opacity: 0 },
-      { delay: 1.5, duration: 0.2, opacity: 1, y: -20, ease: 'sine' },
+      { delay: 1.5, duration: 0.2, opacity: 1, y: -20, ease: 'sine' }
     );
   }, []);
 
-  let imgHeight = window.matchMedia("(max-width: 1024px) and (max-height: 1366px)").matches ? 60 : 85;
+  let imgHeight = window.matchMedia(
+    '(max-width: 1024px) and (max-height: 1366px)'
+  ).matches
+    ? 60
+    : 85;
 
-  imgHeight = window.matchMedia("(max-width: 768px) and (max-height: 1024px)").matches ? 45 : imgHeight;
+  imgHeight = window.matchMedia('(max-width: 768px) and (max-height: 1024px)')
+    .matches
+    ? 45
+    : imgHeight;
 
   return (
     <main className="main-page" id="home">
       <Parallax
-        strength={ 800 }
+        strength={800}
         className="background"
-        renderLayer={ (percentage) => (
+        renderLayer={(percentage) => (
           <div
-            style={ {
+            style={{
               height: percentage * window.innerHeight - 10,
               backgroundColor: '#7CA9C1',
-            } }
+            }}
           />
-        ) }
-        style={ {
+        )}
+        style={{
           backgroundColor: '#7CA9C1',
           position: 'absolute',
           minHeight: '95vh',
           width: '76vw',
           zIndex: -1,
           right: 0,
-        } }
+        }}
       />
       <div className="main-content">
-        <h1 className="title" ref={ (el) => title = el }>
+        <h1 className="title" ref={(el) => (title = el)}>
           Hello,
           <br />
           I&apos;m Erick
-          <br />
-          {' '}
-          Silva
+          <br /> Silva
         </h1>
         <a href="/files/erick-silva-cv.pdf" download>
-          <Button
-          className="cv-btn"
-          >
-            Download CV
-          </Button>
+          <Button className="cv-btn">Download CV</Button>
         </a>
       </div>
       <Parallax
-        strength={ 400 }
+        strength={400}
         bgImage="images/profile-picture.jpg"
-        bgImageStyle={ { height: `${imgHeight}vh` } }
+        bgImageStyle={{ height: `${imgHeight}vh` }}
         className="profile-pic"
-        style={ {
+        style={{
           transform: 'scaleX(-1)',
           marginRight: '7vw',
-        } }
+        }}
       >
-        <div className="profile-pic" style={ { height: `${imgHeight}vh` } } />
+        <div className="profile-pic" style={{ height: `${imgHeight}vh` }} />
       </Parallax>
     </main>
   );

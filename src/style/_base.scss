@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-$primary: #7CA9C1;
+$primary: #7ca9c1;
 $primary-dark: #042528;
-$secondary: #E9708E;
+$secondary: #e9708e;
 $secondary-dark: #da6b86;
 $paragraph: #404949f3;
 
@@ -38,7 +38,6 @@ html {
   }
 }
 
-
 body {
   font-family: 'Poppins', sans-serif;
   width: 100vw;
@@ -60,7 +59,7 @@ body {
   left: -2em;
   bottom: 2em;
   background-color: $secondary;
-  transition: .3s;
+  transition: 0.3s;
 
   &.show {
     left: 0;

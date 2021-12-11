@@ -71,7 +71,7 @@ export default function Home() {
       </h3>
       <p className="about-paragraph" ref={(e) => (paragraph = e)}>
         I&apos;m 22 years old and currently live in Brazil. <br />
-        Studying Software Development since april 2021, I found myself
+        Studying Software Development since April 2021, I found myself
         completely in love with this area during this year. <br />
         This is a space for me to show some of my work and evolution throughout
         these months. <br />
